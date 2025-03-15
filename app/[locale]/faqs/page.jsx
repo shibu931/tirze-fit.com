@@ -1,8 +1,10 @@
 import React from 'react'
 
-const page = async () => {
+const page = () => {
   return (
-    <main></main>
+    <main>
+      
+    </main>
   )
 }
 

@@ -2,7 +2,7 @@
 
 @plugin "tailwindcss-animate";
 
-@config '../tailwind.config.js';
+@config '../../tailwind.config.js';
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -177,13 +177,69 @@ z-index: 0;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
 .banner-text h1{
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
-.banner-btn{
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+
+.article h1{
+  @apply text-3xl font-bold mb-4
 }
+
+.article h2{
+  @apply text-2xl font-semibold mb-3
+}
+.article h3{
+  @apply text-xl font-semibold mb-3
+}
+.article h4{
+  @apply text-lg font-semibold mb-3
+}
+.article h5{
+  @apply text-base font-semibold mb-2
+}
+.article h6{
+  @apply text-base font-semibold mb-2
+}
+
+.article p{
+  @apply leading-normal mb-2
+}
+
+/* Span styles (for inline elements) */
+.article span {
+  /* Add styles as needed for specific span elements */
+}
+
+/* Link styles */
+.article a {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* Blockquote styles */
+.article blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+/* List styles */
+.article ul, ol {
+  margin-bottom: 1rem;
+}
+
+.article ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.article ol {
+  list-style: decimal;
+  padding-left: 2rem;
+}
+

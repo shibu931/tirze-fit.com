@@ -6,6 +6,7 @@ import ReviewCard from './ReviewCard';
 import RatingStar from '../RatingStar';
 import StarRatingBar from './StarRatingBar';
 import { getReviewBySlug } from '@/lib/actions/review.action';
+import { useTranslations } from 'next-intl';
 
 const ReviewPage = ({ slug }) => {
   const [reviews, setReviews] = useState([]);
@@ -17,10 +18,10 @@ const ReviewPage = ({ slug }) => {
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(true);
   const [loadingMore, setLoadingMore] = useState(false);
+  const t = useTranslations('Review_page')
+  const tc = useTranslations('Common')
 
   useEffect(() => {
-    console.log("Running");
-
     const fetchReviews = async () => {
       setLoading(true);
       try {
@@ -77,7 +78,7 @@ const ReviewPage = ({ slug }) => {
   return (
     <>
       <h3 className="text-center font-bold text-2xl ">
-        {slug.replaceAll('-', ' ').toUpperCase()} - opinię
+        {slug.replaceAll('-', ' ').toUpperCase()} - {tc('reviews')}
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-10 gap-4 lg:gap-8 mt-4 sm:mt-8">
         <div className="lg:col-span-4">
@@ -92,7 +93,8 @@ const ReviewPage = ({ slug }) => {
                 <div className="flex flex-col items-center">
                   <span className="text-5xl font-bold text-gray-800">{averageRating}</span>
                   <RatingStar rating={averageRating} className={'text-lg'} />
-                  <span className="mt-1 text-gray-500 font-medium">Based on {totalReviews} Rating's</span>
+                  <span className="mt-1 text-gray-500 font-medium">{
+                  t('based_on_ratings', { count: totalReviews })}</span>
                 </div>
                 <div className="space-y-2">
                   {ratingPercentages.map((rating, index) => (
@@ -107,8 +109,7 @@ const ReviewPage = ({ slug }) => {
                 {hasMore && (
                   <div className="sm:col-span-2 flex justify-center py-5">
                     <button className="px-2 py-1.5 border-2 border-blue-700 text-blue-700 font-semibold uppercase hover:text-white hover:bg-blue-700 text-sm hover:cursor-pointer" onClick={loadMoreReviews} disabled={loadingMore}>
-                      {loadingMore ? 'Loading...' : 'Load More Reviews'}
-                      
+                      {loadingMore ? t('loading') : t('load_more')}
                     </button>
                   </div>
                 )}
@@ -116,7 +117,7 @@ const ReviewPage = ({ slug }) => {
             </>
           ) : (
             <p className="text-lg font-semibold text-center my-10 text-red-700 sm:col-span-2">
-              Żadna recenzja nie została jeszcze opublikowana
+              {t('average_rating')}
             </p>
           )}
         </div>

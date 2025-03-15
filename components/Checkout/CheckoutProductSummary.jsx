@@ -1,18 +1,20 @@
 'use client'
 import { useCart } from '@/context/CartContext';
 import { currency } from '@/lib/constants/commonName'
+import { useTranslations } from 'next-intl';
 import Image from 'next/image'
 import Link from 'next/link'
 
 const CheckoutProductSummary = () => {
+  const t = useTranslations('Checkout')
+  const c = useTranslations('Common')
   const { cart, productTotal } = useCart()
   if (!cart?.item || cart?.item.length === 0) {
     return <p>No items in cart.</p>;
   }
-
   return (
     <>
-      <h2 className="text-lg font-semibold mb-4">Order Summary</h2>
+      <h2 className="text-lg font-semibold mb-4">{t('ordr_summary')}</h2>
       <ul className="space-y-2">
         {cart?.item.map((item,index) => (
           <li key={index} className="flex justify-between border-b border-gray-300 py-2">
@@ -49,13 +51,13 @@ const CheckoutProductSummary = () => {
       <div className="absolute bottom-0 w-[92%] sm:w-[95%]">
         <div className="my-2 border-b border-gray-300 py-2">
           <div className="flex justify-between font-semibold">
-            <span className='uppercase'>Delivery Charges:</span>
+            <span className='uppercase'>{t('delivery_charges')}:</span>
             <span>{20} {currency}</span>
           </div>
         </div>
         <div className="my-3 py-2">
           <div className="flex justify-between font-bold text-lg">
-            <span className='uppercase'>Total:</span>
+            <span className='uppercase'>{c('total')}:</span>
             <span>{productTotal} {currency}</span>
           </div>
         </div>

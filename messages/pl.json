@@ -1,0 +1,118 @@
+{
+    "Common":{
+      "disclaimer_txt":"Wszystkie niżej wymienione właściwości zostały zaobserwowane przy badaniach laboratoryjnych. Mają one charakter wyłącznie informacyjny. Wszelkie informacje zawarte w opisach nie są zatwierdzone przez GIS, GIF ani EFSA. Substancja nie jest produktem spożywczym ani suplementem diety. Nie nadaje się do spożycia przez ludzi. Produkt jest kwalifikowany jako odczynnik chemiczny / materiał odniesienia dopuszczony do obrotu na terenie UE. Można go używać wyłącznie do badań naukowych. Pozostałe informacje na temat środka zawarte są w karcie charakterystyki substancji chemicznej, którą udostępniamy do wglądu. Produkty dostępne są dla instytucji lub osób prywatnych, które są powiązane z działalnością badawczą lub laboratoryjną.",
+      "add_to_cart":"Do koszyka",
+      "reviews":"Opinii",
+      "Star":"Gwiazda",
+      "blog":"Blogi",
+      "toc":"Spis treści",
+      "total":"Łączny",
+      "delivery_fee":"Opłata za dostawę",
+      "subtotal":"Suma częściowa"
+    },
+    "HomePage": {
+      "title": "Cześć ludzie!",
+      "banner_btn": "Przeglądaj sklep"
+    },
+    "Form":{
+      "title":"Skontaktuj się z nami",
+      "name":"Name",
+      "phone":"Telefon Numer",
+      "phone_placeholder":"Wpisz swój numer telefonu.",
+      "name_placeholder":"Wpisz swoje imię i nazwisko",
+      "email":"Email",
+      "email_placeholder":"Twój adres e-mail",
+      "message":"Komunikat",
+      "message_placeholder":"Twoja opinia",
+      "review_placeholder":"Twoja opinia",
+      "checkbox_label":"Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych do realizacji i obsługi procesu kontaktu zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późn.zm.).",
+      "Submit":"Prześlij",
+      "loading":"Przetwarzanie",
+      "search_placeholder":"Szukaj produktów",
+      "review_form_title":"Zostaw opinię",
+      "rating_placeholder":"Wybierz ocenę",
+      "review_post_btn":"Opublikuj recenzję",
+      "checkout_form_title":"Adres",
+      "delivery_opt":"Opcje dostawy",
+      "pmn":"Numer paczkomatu",
+      "country": "Kraj",
+      "country_placeholder": "Wpisz swój kraj",
+      "address": "Adres",
+      "address_placeholder": "Wpisz pełny adres - Numer domu, Ulica, Miasto"
+    },
+    "Footer": {
+      "contact_info": "Informacje kontaktowe",
+      "imp_link": "Ważne linki",
+      "community": "Społeczność"
+    },
+    "Links": {
+      "FAQ's": "FAQ",
+      "Contact": "Kontakt",
+      "Delivery-and-Payment": "Dostawa i płatność",
+      "Shop Rules": "Regulamin sklepu",
+      "Privacy": "Prywatność",
+      "Affiliate Program": "Program partnerski",
+      "Blogs": "Blogi",
+      "Research": "Badania",
+      "Shop": "Sklep",
+      "What is GLP+1+GIP": "Czym jest GLP+1+GIP",
+      "How GLP-1+GIP works": "Jak działa GLP-1+GIP",
+      "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
+      "GLP-1+GIP vs other analogues": "GLP-1+GIP vs. inne analogi",
+      "GLP-1+GIP": "GLP-1+GIP",
+      "Home": "Strona główna"
+    },
+    "Cart":{
+      "cart_title": "PRODUKTY W KOSZYKU",
+      "empty_cart": "Brak produktów w koszyku",
+      "cart_ttl_amt": "Całkowita kwota koszyka",
+      "chkt": "Do kasy",
+      "price":"Cena"
+    },
+    "Product_page":{
+      "weight_loss":"Program odchudzania",
+      "legal_desc":"Substancja nie jest produktem spożywczym ani suplementem diety, nie nadaje się on do spożycia przez ludzi. Produkt jest sklasyfikowany jako odczynnik chemiczny dopuszczony do obrotu na terenie Unii Europejskiej, można go używać wyłącznie do badań naukowych.",
+      "usp":{
+        "return_usp":"14-dniowa polityka zwrotów",
+        "lab_ql_usp":"Jakość laboratoryjna",
+        "shopping_usp":"Bezpieczne zakupy",
+        "shipping":"Czas wysyłki",
+        "shipping_time":"1-2  dni robocze",
+        "quality":"gwarancja jakości",
+        "stand_lab":"standard laboratoryjny"
+      },
+      "product_warning":{
+        "title":"Produkt przeznaczony do celów badawczych",
+        "additional_info":"INFORMACJE DODATKOWE:",
+        "point_one":"Produkt (substancja) nie jest produktem spożywczym ani suplementem diety, nie nadaje się do spożycia przez ludzi.",
+        "point_two":"Chronić przed dziećmi.",
+        "point_three":"Przechowywać pojemnik szczelnie zamknięty.",
+        "point_four":"Przechowywać w miejscu suchym, chłodnym, zacienionym; chronić przed wilgocią.",
+        "point_five":"Przechowywać wyłącznie w oryginalnym opakowaniu.",
+        "point_six":"Unikać kontaktu w czasie ciąży i karmienia piersią.",
+        "point_seven":"W przypadku złego samopoczucia lub działań niepożądanych związanych z kontaktem z substancją zasięgnąć opinii lekarza."
+      }
+    },
+    "Review_page":{
+      "based_on_ratings": "Na podstawie {count} {count, plural, one {oceny} few {ocen} many {ocen} other {ocen}}",
+      "load_more": "Załaduj więcej recenzji",
+      "loading": "Ładowanie...",
+      "no_reviews": "Żadna recenzja nie została jeszcze opublikowana",
+      "average_rating": "Średnia ocena"
+    },
+    "Checkout":{
+      "chktout":"Kasa",
+      "ordr_summary":"Podsumowanie zamówienia",
+      "delivery_charges":"Koszty dostawy"
+    },
+    "Order_Info_Page":{
+      "order_msg":"Nasz opiekun klienta wyśle Ci konto bankowe, na które otrzymasz płatność w ciągu 2 godzin od złożenia zamówienia. Twoje zamówienie zostanie potwierdzone dopiero po pomyślnym dokonaniu płatności.",
+      "detail_info":"Szczegółowe informacje",
+      "orderId":"Order ID",
+      "date":"Umieszczono w dniu",
+      "shipping_address":"Adres wysyłki",
+      "ordr_status":"Status zamówienia",
+      "status":"stan",
+      "ordrd_products":"Zamówione produkty"
+    }
+  }

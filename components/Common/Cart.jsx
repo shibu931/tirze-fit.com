@@ -16,6 +16,7 @@ import { RxCross1 } from "react-icons/rx";
 import Link from 'next/link';
 import { currency } from '@/lib/constants/commonName';
 import { useCart } from '@/context/CartContext';
+import { useTranslations } from 'next-intl';
 
 // const cart = {
 //     cardId: 123,
@@ -66,6 +67,7 @@ import { useCart } from '@/context/CartContext';
 // }
 
 const Cart = () => {
+    const t = useTranslations('Cart')
     const {cart, productTotal} = useCart()
     return (
       <Dialog>
@@ -75,18 +77,18 @@ const Cart = () => {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle className="tracking-wider text-center">SHOPPING CART ITEMS</DialogTitle>
+            <DialogTitle className="tracking-wider text-center">{t('cart_title')}</DialogTitle>
           </DialogHeader>
           <ul className="h-[380px] overflow-y-scroll border-t border-b border-gray-400 px-2 cart-list my-2">
             {cart?.item.length > 0 ? (
               cart?.item.map((item,index) => <CartItem key={index} item={item}/>)
             ) : (
               <li>
-                <p className='text-center my-8 text-red-700'>No Product In Shopping Cart</p>
+                <p className='text-center my-8 text-red-700'>{t('empty_cart')}</p>
               </li>
             )}
           </ul>
-          <p className='font-semibold uppercase'>Cart Total Amount: {productTotal} {currency}</p>
+          <p className='font-semibold uppercase'>{t('cart_ttl_amt')}: {productTotal} {currency}</p>
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
             <Link
@@ -103,7 +105,7 @@ const Cart = () => {
               >
                 <path d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
               </svg>
-              CHECKOUT
+              {t('chkt')}
             </Link>
           </DialogClose>
         </DialogFooter>
@@ -115,7 +117,8 @@ const Cart = () => {
   export default Cart;
   
   function CartItem({ item, currency }) {
-    const {updateCartItemQuantity} = useCart()
+    const {updateCartItemQuantity, removeFromCart} = useCart()
+    const t = useTranslations('Cart')
     const quantityInputRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false); 
     const [showInput, setShowInput] = useState(false);
@@ -190,11 +193,11 @@ const Cart = () => {
   
             </div>
             <p>
-              Price: {item.productPrice * item.quantity} {currency}
+              {t('price')}: {item.productPrice * item.quantity} {currency}
             </p>
           </div>
         </div>
-        <div title="Remove" className="my-auto ms-auto">
+        <div title="Remove" onClick={()=> removeFromCart(item.productId)} className="my-auto ms-auto">
           <span className="hover:cursor-pointer transition-all duration-200 text-red-700 hover:bg-red-700 hover:text-white block p-1 rounded-full">
             <RxCross1 />
           </span>

@@ -4,8 +4,10 @@ import Link from 'next/link'
 import React from 'react'
 import { IoCart } from "react-icons/io5";
 import AddToCartBtn from './AddToCartBtn'
+import { useTranslations } from 'next-intl';
 
 const ProductCard = ({product}) => {
+  const t = useTranslations('Common')
   return (
     <div className='border border-neutral-400 hover:border-blue-900 p-3'>
         <div className="w-full overflow-hidden flex justify-center">
@@ -24,7 +26,7 @@ const ProductCard = ({product}) => {
         <hr className='border-gray-300 my-2'/>
         <AddToCartBtn product={product} className='flex items-center mx-auto font-medium border border-blue-800 px-3 py-1.5 rounded bg-blue-700 text-white text-sm hover:bg-blue-800 hover:shadow shadow-gray-400 hover:cursor-pointer transition-all duration-200'>
         <IoCart className='me-2 text-[20px]'/>
-          Do koszyka
+          {t('add_to_cart')}
         </AddToCartBtn>
     </div>
   )

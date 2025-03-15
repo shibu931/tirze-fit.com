@@ -68,7 +68,7 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = (productId) => {
     const updatedCart = {
       ...cart,
-      item: cart.item.filter((item) => item.product !== productId),
+      item: cart.item.filter((item) => item.productId !== productId),
     };
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     if (updatedCart.item.length == 0) setCart(null)
