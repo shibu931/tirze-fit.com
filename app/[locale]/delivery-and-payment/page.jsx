@@ -3,7 +3,7 @@ import { getArticle } from '@/lib/actions/article.action'
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const { article } = await getArticle(locale, 'faqs');
+  const { article } = await getArticle(locale, 'delivery-and-payment');
 
   if (!article) {
     return {
@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const imageUrl = new URL(article.ogImage, baseUrl).toString();
   const keywordsArray = article.keywords.split(',').map(keyword => keyword.trim());
-  const canonicalUrl = new URL(`/${locale}/faqs`, baseUrl).toString();
+  const canonicalUrl = new URL(`/${locale}/delivery-and-payment`, baseUrl).toString();
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -42,8 +42,8 @@ export async function generateMetadata({ params }) {
       canonical: canonicalUrl,
       languages: {
         'x-default': canonicalUrl,
-        ...(locale === 'en' ? {} : { 'en': new URL('/en/faqs', baseUrl).toString() }),
-        ...(locale === 'fr' ? {} : { 'fr': new URL('/fr/faqs', baseUrl).toString() }),
+        ...(locale === 'en' ? {} : { 'en': new URL('/en/delivery-and-payment', baseUrl).toString() }),
+        ...(locale === 'fr' ? {} : { 'fr': new URL('/fr/delivery-and-payment', baseUrl).toString() }),
       },
     },
     openGraph: {
@@ -75,7 +75,7 @@ export async function generateMetadata({ params }) {
 
 const page = async ({ params }) => {
   const { locale } = await params;
-  const { article } = await getArticle(locale, 'faqs');
+  const { article } = await getArticle(locale, 'delivery-and-payment');
 
   return (
     <main>

@@ -1,118 +1,172 @@
 {
   "Common":{
-    "disclaimer_txt":"Wszystkie niżej wymienione właściwości zostały zaobserwowane przy badaniach laboratoryjnych. Mają one charakter wyłącznie informacyjny. Wszelkie informacje zawarte w opisach nie są zatwierdzone przez GIS, GIF ani EFSA. Substancja nie jest produktem spożywczym ani suplementem diety. Nie nadaje się do spożycia przez ludzi. Produkt jest kwalifikowany jako odczynnik chemiczny / materiał odniesienia dopuszczony do obrotu na terenie UE. Można go używać wyłącznie do badań naukowych. Pozostałe informacje na temat środka zawarte są w karcie charakterystyki substancji chemicznej, którą udostępniamy do wglądu. Produkty dostępne są dla instytucji lub osób prywatnych, które są powiązane z działalnością badawczą lub laboratoryjną.",
-    "add_to_cart":"Do koszyka",
-    "reviews":"Opinii",
-    "Star":"Gwiazda",
-    "blog":"Blogi",
-    "toc":"Spis treści",
-    "total":"Łączny",
-    "delivery_fee":"Opłata za dostawę",
-    "subtotal":"Suma częściowa"
+    "disclaimer_txt":"All of the properties listed below have been observed in laboratory tests. They are for information purposes only. All information contained in the descriptions has not been approved by GIS, GIF or EFSA. The substance is not a food product or a dietary supplement. It is not suitable for human consumption. The product is classified as a chemical reagent / reference material permitted for marketing in the EU. It may only be used for scientific research. Other information about the product is included in the chemical safety data sheet, which we provide for review. The products are available to institutions or individuals who are associated with research or laboratory activities.",
+    "add_to_cart":"Add to cart",
+    "reviews":"Opinions",
+    "Star":"Star",
+    "blog":"Blog's",
+    "toc":"Contents",
+    "total":"Total",
+    "delivery_fee":"Delivery fee",
+    "subtotal":"Subtotal",
+    "contact_title":"Contact and Support",
+    "contact_desc":"Do you have questions about therapy with tirzepatide? Do you want to learn more about individual products, such as semaglutide or retatrutyde? Contact us today! Our team of experts is ready to provide you with all the information. Just visit our contact page or call our hotline - we are at your disposal."
   },
   "HomePage": {
-    "title": "Cześć ludzie!",
-    "banner_btn": "Przeglądaj sklep"
+    "title": "Welcome to our store with the highest quality chemical reagents.",
+    "banner_btn": "Browse the store"
   },
   "Form":{
-    "title":"Skontaktuj się z nami",
+    "title":"Contact Us",
     "name":"Name",
-    "phone":"Telefon Numer",
-    "phone_placeholder":"Wpisz swój numer telefonu.",
-    "name_placeholder":"Wpisz swoje imię i nazwisko",
+    "phone":"Phone Number",
+    "phone_placeholder":"Enter your phone number.",
+    "name_placeholder":"Enter your name and surname",
     "email":"Email",
-    "email_placeholder":"Twój adres e-mail",
-    "message":"Komunikat",
-    "message_placeholder":"Twoja opinia",
-    "review_placeholder":"Twoja opinia",
-    "checkbox_label":"Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych do realizacji i obsługi procesu kontaktu zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późn.zm.).",
-    "Submit":"Prześlij",
-    "loading":"Przetwarzanie",
-    "search_placeholder":"Szukaj produktów",
-    "review_form_title":"Zostaw opinię",
-    "rating_placeholder":"Wybierz ocenę",
-    "review_post_btn":"Opublikuj recenzję",
+    "email_placeholder":"Your email address",
+    "message":"Message",
+    "message_placeholder":"Your opinion",
+    "review_placeholder":"Your review",
+    "checkbox_label":"I consent to the processing of my personal data contained in the contact form for the purposes necessary to implement and service the contact process in accordance with the Act of 29 August 1997 on the protection of personal data (Journal of Laws of 2002, No. 101, item 926, as amended).",
+    "Submit":"Submit",
+    "loading":"Processing",
+    "search_placeholder":"Search for products",
+    "review_form_title":"Leave a review",
+    "rating_placeholder":"Select rating",
+    "review_post_btn":"Post a review",
     "checkout_form_title":"Adres",
-    "delivery_opt":"Opcje dostawy",
-    "pmn":"Numer paczkomatu",
-    "country": "Kraj",
-    "country_placeholder": "Wpisz swój kraj",
+    "delivery_opt":"Delivery Options",
+    "pmn":"Parcel locker number",
+    "country": "Country",
+    "country_placeholder": "Enter your country",
     "address": "Adres",
-    "address_placeholder": "Wpisz pełny adres - Numer domu, Ulica, Miasto"
+    "address_placeholder": "Enter full address - House number, Street, City"
   },
   "Footer": {
-    "contact_info": "Informacje kontaktowe",
-    "imp_link": "Ważne linki",
-    "community": "Społeczność"
+    "contact_info": "Contact Information",
+    "imp_link": "Important links",
+    "community": "Community"
   },
   "Links": {
     "FAQ's": "FAQ",
-    "Contact": "Kontakt",
-    "Delivery-and-Payment": "Dostawa i płatność",
-    "Shop Rules": "Regulamin sklepu",
-    "Privacy": "Prywatność",
-    "Affiliate Program": "Program partnerski",
-    "Blogs": "Blogi",
-    "Research": "Badania",
-    "Shop": "Sklep",
-    "What is GLP+1+GIP": "Czym jest GLP+1+GIP",
-    "How GLP-1+GIP works": "Jak działa GLP-1+GIP",
+    "Contact": "Contact",
+    "Delivery-and-Payment": "Delivery and Payment",
+    "Shop Rules": "Shop Rules",
+    "Privacy": "Privacy",
+    "Affiliate Program": "Affiliate Program",
+    "Blogs": "Blogs",
+    "Research": "Research",
+    "Shop": "Shop",
+    "What is GLP+1+GIP": "What is GLP+1+GIP",
+    "How GLP-1+GIP works": "How GLP-1+GIP works",
     "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
     "GLP-1+GIP vs other analogues": "GLP-1+GIP vs. inne analogi",
     "GLP-1+GIP": "GLP-1+GIP",
-    "Home": "Strona główna"
+    "Home": "Home Page"
   },
   "Cart":{
-    "cart_title": "PRODUKTY W KOSZYKU",
-    "empty_cart": "Brak produktów w koszyku",
-    "cart_ttl_amt": "Całkowita kwota koszyka",
-    "chkt": "Do kasy",
+    "cart_title": "PRODUCTS IN CART",
+    "empty_cart": "No products in cart",
+    "cart_ttl_amt": "Total cart amount",
+    "chkt": "Checkout",
     "price":"Cena"
   },
   "Product_page":{
-    "weight_loss":"Program odchudzania",
-    "legal_desc":"Substancja nie jest produktem spożywczym ani suplementem diety, nie nadaje się on do spożycia przez ludzi. Produkt jest sklasyfikowany jako odczynnik chemiczny dopuszczony do obrotu na terenie Unii Europejskiej, można go używać wyłącznie do badań naukowych.",
+    "weight_loss":"Weight loss program",
+    "legal_desc":"The substance is not a food product or a dietary supplement, it is not suitable for human consumption. The product is classified as a chemical reagent permitted for sale in the European Union, it can only be used for scientific research.",
     "usp":{
-      "return_usp":"14-dniowa polityka zwrotów",
-      "lab_ql_usp":"Jakość laboratoryjna",
-      "shopping_usp":"Bezpieczne zakupy",
-      "shipping":"Czas wysyłki",
-      "shipping_time":"1-2  dni robocze",
-      "quality":"gwarancja jakości",
-      "stand_lab":"standard laboratoryjny"
+      "return_usp":"14 Day Returns Policy",
+      "lab_ql_usp":"Laboratory quality",
+      "shopping_usp":"Safe Shopping",
+      "shipping":"Shipping time",
+      "shipping_time":"1-2 business days",
+      "quality":"quality guarantee",
+      "stand_lab":"laboratory standard"
     },
     "product_warning":{
-      "title":"Produkt przeznaczony do celów badawczych",
-      "additional_info":"INFORMACJE DODATKOWE:",
-      "point_one":"Produkt (substancja) nie jest produktem spożywczym ani suplementem diety, nie nadaje się do spożycia przez ludzi.",
-      "point_two":"Chronić przed dziećmi.",
-      "point_three":"Przechowywać pojemnik szczelnie zamknięty.",
-      "point_four":"Przechowywać w miejscu suchym, chłodnym, zacienionym; chronić przed wilgocią.",
-      "point_five":"Przechowywać wyłącznie w oryginalnym opakowaniu.",
-      "point_six":"Unikać kontaktu w czasie ciąży i karmienia piersią.",
-      "point_seven":"W przypadku złego samopoczucia lub działań niepożądanych związanych z kontaktem z substancją zasięgnąć opinii lekarza."
-    }
+      "title":"Product intended for research purposes",
+      "additional_info":"ADDITIONAL INFORMATION:",
+      "point_one":"The product (substance) is not a food product or a dietary supplement, it is not suitable for human consumption.",
+      "point_two":"Keep away from children.",
+      "point_three":"Keep container tightly closed.",
+      "point_four":"Store in a dry, cool, shaded place; protect from moisture.",
+      "point_five":"Keep only in original packaging.",
+      "point_six":"Avoid contact during pregnancy and breastfeeding.",
+      "point_seven":"In case of feeling unwell or adverse reactions related to contact with the substance, consult a doctor."
+    },
+    "seo": {
+      "title_suffix": "Best Weight Loss Solution | Tirze-Fit",
+      "description": "Buy {productName} - Premium quality weight loss peptide with certified results. Fast shipping in Poland. 100% Quality Guarantee.",
+      "keywords": "buy {productName}, weight loss, Poland, certified, peptide",
+      "og_title": "Premium Weight Loss Solution - {productName}",
+      "og_description": "Discover {productName} - Effective weight management solution with clinical results. Order now!",
+      "twitter_title": "Effective Weight Loss with {productName}",
+      "twitter_description": "Get {productName} for best results in weight management. Certified quality. Order now!"
+    },
+    "price_label": "CENA",
+    "product_image_alt": "Product visual presentation"
   },
   "Review_page":{
-    "based_on_ratings": "Na podstawie {count} {count, plural, one {oceny} few {ocen} many {ocen} other {ocen}}",
-    "load_more": "Załaduj więcej recenzji",
-    "loading": "Ładowanie...",
-    "no_reviews": "Żadna recenzja nie została jeszcze opublikowana",
-    "average_rating": "Średnia ocena"
+    "based_on_ratings": "Based on {count} {count, plural, one {ratings} few {ratings} many {ratings} other {ratings}}",
+    "load_more": "Load more reviews",
+    "loading": "Loading...",
+    "no_reviews": "No reviews have been published yet",
+    "average_rating": "Average rating"
   },
   "Checkout":{
-    "chktout":"Kasa",
-    "ordr_summary":"Podsumowanie zamówienia",
-    "delivery_charges":"Koszty dostawy"
+    "chktout":"Country",
+    "ordr_summary":"Order Summary",
+    "delivery_charges":"Delivery charges"
   },
   "Order_Info_Page":{
-    "order_msg":"Nasz opiekun klienta wyśle Ci konto bankowe, na które otrzymasz płatność w ciągu 2 godzin od złożenia zamówienia. Twoje zamówienie zostanie potwierdzone dopiero po pomyślnym dokonaniu płatności.",
-    "detail_info":"Szczegółowe informacje",
+    "order_msg":"Our account manager will send you the bank account number where you will receive your payment within 2 hours of placing your order. Your order will be confirmed only after successful payment.",
+    "detail_info":"Detailed information",
     "orderId":"Order ID",
-    "date":"Umieszczono w dniu",
-    "shipping_address":"Adres wysyłki",
-    "ordr_status":"Status zamówienia",
-    "status":"stan",
-    "ordrd_products":"Zamówione produkty"
+    "date":"Posted on",
+    "shipping_address":"Shipping address",
+    "ordr_status":"Order Status",
+    "status":"Status",
+    "ordrd_products":"Ordered products"
+  },
+  "BlogListPage": {
+    "seo": {
+      "title": "All Articles | Tirze-Fit Research Blog",
+      "description": "Explore our complete collection of articles and research papers on weight loss peptides, metabolism optimization, and biohacking.",
+      "keywords": "blog articles, weight loss research, peptide studies, biohacking, metabolism",
+      "og_title": "Complete Article Collection - Tirze-Fit Research",
+      "og_description": "Browse all our in-depth articles and research papers on modern weight loss solutions and metabolic optimization.",
+      "og_image_alt": "Tirze-Fit Blog Article Collection",
+      "twitter_title": "Weight Loss Research Articles | Tirze-Fit",
+      "twitter_description": "Discover our complete collection of research-backed articles on peptide therapies and metabolic optimization."
+    },
+    "title": "Research Blog",
+    "description": "Latest articles and studies on peptide therapies, weight management, and metabolic optimization",
+    "reading_time": "min read",
+    "featured_image_alt": "Featured image for article: {title}",
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next",
+      "page": "Page {current} of {total}"
+    },
+    "schema": {
+      "name": "All Blog Articles",
+      "description": "Complete list of articles and research papers on weight loss peptides"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "ArticlePage": {
+      "seo": {
+        "title_suffix": "| Tirze-Fit",
+        "default_description": "Read our comprehensive article on",
+        "default_keywords": "article, blog post, research"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "blog": "Blog"
+      },
+      "no_article": "Article not found"
+    }
   }
 }

@@ -26,6 +26,7 @@ import { LuSearch } from "react-icons/lu";
 import Cart from "./Cart"
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "./LanguageSwitcher";
+import Image from "next/image";
 
 const Navbar = () => {
     const t = useTranslations('Form')
@@ -49,10 +50,18 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header ref={navbarRef} className={`text-neutral-900 mx-auto py-4 transition-all duration-300 fixed w-full z-50 bg-white ${isSticky ? 'shadow-lg fixed' : 'shadow-none'}`}>
+        <header ref={navbarRef} className={`text-neutral-900 py-4 mx-auto transition-all duration-300 fixed w-full z-50 bg-white ${isSticky ? 'shadow-lg fixed' : 'shadow-none'}`}>
             <div className="container items-center mx-auto flex justify-between px-4">
                 <div>
-                    <Link className="text-xl font-bold focus-visible:ring-1 focus:bg-accent focus:text-accent-foreground focus:ring-blue-100 focus:outline-blue-100 focus:rounded p-1 focus-visible:outline-1" href={'/'}>Tirzepatyd<span className="text-2xl text-blue-400">.</span></Link>
+                    <Link className="focus-visible:ring-1 py-1 focus:bg-accent focus:text-accent-foreground focus:ring-blue-100 focus:outline-blue-100 focus:rounded focus-visible:outline-1" href={'/'}>
+                    <Image
+                        src="/assets/logo.png"
+                        width={180}
+                        height={120}
+                        className=""
+                        alt="Tirze-fit"
+                    />
+                    </Link>
                 </div>
                 <div className="flex items-center md:space-x-4">
                     <div className="hidden md:block"><NavMenu pathname={pathname} /></div>

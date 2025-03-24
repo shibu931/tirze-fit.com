@@ -1,5 +1,4 @@
 import { cache } from 'react';
-import sanitizeHtml from 'sanitize-html';
 
 const ArticlePage = async ({ content }) => {
   const sanitizedHTML = await sanitizeContent(content);

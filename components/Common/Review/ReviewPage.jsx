@@ -104,7 +104,7 @@ const ReviewPage = ({ slug }) => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                 {reviews.map((review, index) => (
-                  <ReviewCard key={index} name={review.name} rating={review.rating} message={review.message} date={review.createdAt} />
+                  review?.isVerified && <ReviewCard key={index} name={review.name} rating={review.rating} message={review.message} date={review.createdAt} />
                 ))}
                 {hasMore && (
                   <div className="sm:col-span-2 flex justify-center py-5">

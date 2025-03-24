@@ -8,10 +8,12 @@
       "toc":"Spis treści",
       "total":"Łączny",
       "delivery_fee":"Opłata za dostawę",
-      "subtotal":"Suma częściowa"
+      "subtotal":"Suma częściowa",
+      "contact_title":"Kontakt i Wsparcie",
+      "contact_desc":"Masz pytania dotyczące terapii z tirzepatydem ? Chcesz dowiedzieć się więcej o poszczególnych produktach, takich jak semaglutyd lub Retatrutyd Skontaktuj się z nami już dziś! Nasz zespół ekspertów jest gotowy, aby udzielić Ci wszelkich informacji Wystarczy, że odwiedzisz naszą stronę kontaktową lub zadzwonisz na infolinię – jesteśmy do Twojej dyspozycji."
     },
     "HomePage": {
-      "title": "Cześć ludzie!",
+      "title": "Witamy w naszym sklepie z odczynnikami chemicznymi najwyższej jakości.",
       "banner_btn": "Przeglądaj sklep"
     },
     "Form":{
@@ -91,7 +93,18 @@
         "point_five":"Przechowywać wyłącznie w oryginalnym opakowaniu.",
         "point_six":"Unikać kontaktu w czasie ciąży i karmienia piersią.",
         "point_seven":"W przypadku złego samopoczucia lub działań niepożądanych związanych z kontaktem z substancją zasięgnąć opinii lekarza."
-      }
+      },
+      "seo": {
+        "title_suffix": "Najlepsze Rozwiązanie na Utratę Wagi | Tirze-Fit",
+        "description": "Kup {productName} - Peptyd na utratę wagi o najwyższej jakości z certyfikowanymi wynikami. Szybka wysyłka w Polsce. 100% Gwarancja Jakości.",
+        "keywords": "kup {productName}, utrata wagi, Polska, certyfikowany, peptyd",
+        "og_title": "Najwyższej Jakości Rozwiązanie na Utratę Wagi - {productName}",
+        "og_description": "Odkryj {productName} - Skuteczne rozwiązanie do kontroli wagi z klinicznymi wynikami. Zamów teraz!",
+        "twitter_title": "Skuteczna Utrata Wagi z {productName}",
+        "twitter_description": "Zdobądź {productName} dla najlepszych wyników w kontroli wagi. Certyfikowana jakość. Zamów teraz!"
+      },
+      "price_label": "CENA",
+      "product_image_alt": "Wizualna prezentacja produktu"
     },
     "Review_page":{
       "based_on_ratings": "Na podstawie {count} {count, plural, one {oceny} few {ocen} many {ocen} other {ocen}}",
@@ -114,5 +127,58 @@
       "ordr_status":"Status zamówienia",
       "status":"stan",
       "ordrd_products":"Zamówione produkty"
+    },
+    "BlogListPage": {
+      "seo": {
+        "title": "Wszystkie Artykuły | Blog Tirze-Fit",
+        "description": "Przeglądaj nasze kompleksowe artykuły i badania naukowe dotyczące peptydów odchudzających, optymalizacji metabolizmu i biohackingu.",
+        "keywords": "artykuły blogowe, badania odchudzające, badania peptydów, biohacking, metabolizm",
+        "og_title": "Pełna Kolekcja Artykułów - Tirze-Fit Research",
+        "og_description": "Przeglądaj wszystkie nasze szczegółowe artykuły i prace badawcze dotyczące nowoczesnych rozwiązań w zakresie utraty wagi i optymalizacji metabolicznej.",
+        "og_image_alt": "Kolekcja artykułów na blogu Tirze-Fit",
+        "twitter_title": "Artykuły Badawcze o Odchudzaniu | Tirze-Fit",
+        "twitter_description": "Odkryj naszą kompletną kolekcję artykułów opartych na badaniach dotyczących terapii peptydowych i optymalizacji metabolicznej."
+      },
+      "title": "Blog Badawczy",
+      "description": "Najnowsze artykuły i badania dotyczące terapii peptydowych, kontroli wagi i optymalizacji metabolizmu",
+      "reading_time": "min czytania",
+      "featured_image_alt": "Główne zdjęcie dla artykułu: {title}",
+      "pagination": {
+        "previous": "Poprzednia",
+        "next": "Następna",
+        "page": "Strona {current} z {total}"
+      },
+      "schema": {
+        "name": "Wszystkie Artykuły",
+        "description": "Pełna lista artykułów i badań naukowych dotyczących peptydów odchudzających"
+      },
+      "breadcrumb": {
+        "home": "Strona Główna",
+        "blog": "Blog"
+      },
+      "ArticlePage": {
+        "seo": {
+          "title_suffix": "| Tirze-Fit",
+          "default_description": "Przeczytaj nasz szczegółowy artykuł na temat",
+          "default_keywords": "artykuł, post blogowy, badania"
+        },
+        "breadcrumb": {
+          "home": "Strona Główna",
+          "blog": "Blog"
+        },
+        "no_article": "Artykuł nie znaleziony"
+      }
+    },
+    "ArticlePage": {
+      "seo": {
+        "title_suffix": "| Tirze-Fit",
+        "default_description": "Read our comprehensive article on",
+        "default_keywords": "article, blog post, research"
+      },
+      "breadcrumb": {
+        "home": "Home",
+        "blog": "Blog"
+      },
+      "no_article": "Article not found"
     }
   }

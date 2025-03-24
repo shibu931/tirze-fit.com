@@ -13,13 +13,128 @@ import { getProduct } from '@/lib/actions/product.action';
 import AddToCartBtn from '@/components/Common/AddToCartBtn';
 import { getTranslations } from 'next-intl/server';
 
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const { data: product } = await getProduct(slug);
+  const t = await getTranslations('Product_page');
+  return {
+    title: `${product.productName} | ${t('seo.title_suffix')}`,
+    description: t('seo.description', { productName: product.productName }),
+    keywords: product?.keywords,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`,
+      languages: {
+        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/products/${slug}`,
+        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/products/${slug}`,
+      },
+    },
+    openGraph: {
+      title: `${product.productName} | ${t('seo.title_suffix')}`,
+      description: t('seo.description', { productName: product.productName }),
+      images: [
+        {
+          url: product.productImage[0].large,
+          width: 800,
+          height: 600,
+          alt: product.productName,
+        },
+      ],
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${product.productName} | ${t('seo.title_suffix')}`,
+      description: t('seo.description', { productName: product.productName }),
+      images: [product.productImage[0].large],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        noimageindex: false,
+      },
+    },
+  };
+}
+
+const ProductSchema = ({ product }) => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": product.productName,
+    "image": product.productImage.map(img => img.large),
+    "description": product.description || "Premium weight loss solution",
+    "brand": {
+      "@type": "Brand",
+      "name": "Tirze-Fit"
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.slug}`,
+      "priceCurrency": currency,
+      "price": product.productPrice,
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "ratingCount": "100"
+    }
+  };
+
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify(schemaData)}
+    </script>
+  );
+};
+
+const BreadcrumbSchema = () => {
+  const schemaData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": process.env.NEXT_PUBLIC_BASE_URL
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": `${process.env.NEXT_PUBLIC_BASE_URL}/shop`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Current Product"
+      }
+    ]
+  };
+
+  return (
+    <script type="application/ld+json">
+      {JSON.stringify(schemaData)}
+    </script>
+  );
+};
+
+
 const page = async ({ params }) => {
   const t = await getTranslations('Common');
   const p = await getTranslations('Product_page');
   const { slug } = await params
   const { data: product } = await getProduct(slug)
   const simplifiedProduct = {
-    productId:product.productId,
+    productId: product.productId,
     slug: product.slug,
     productName: product.productName,
     productPrice: product.productPrice,
@@ -27,6 +142,8 @@ const page = async ({ params }) => {
   };
   return (
     <main>
+      <ProductSchema product={product} />
+      <BreadcrumbSchema />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12">
         <div className='flex justify-center border border-gray-400'>
           <Image
