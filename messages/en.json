@@ -14,7 +14,8 @@
   },
   "HomePage": {
     "title": "Welcome to our store with the highest quality chemical reagents.",
-    "banner_btn": "Browse the store"
+    "banner_btn": "Browse the store",
+    "blog_btn":"View Blogs"
   },
   "Form":{
     "title":"Contact Us",
@@ -40,12 +41,19 @@
     "country": "Country",
     "country_placeholder": "Enter your country",
     "address": "Adres",
-    "address_placeholder": "Enter full address - House number, Street, City"
+    "address_placeholder": "Enter full address - House number, Street, City",
+    "name_required":"Name is required",
+    "email_required":"Email is required",
+    "email_invalid":"Email is invalid",
+    "message_required":"Message is required",
+    "submission_failed":"Submission Failed",
+    "submission_success":"Success"
   },
   "Footer": {
     "contact_info": "Contact Information",
     "imp_link": "Important links",
-    "community": "Community"
+    "community": "Community",
+    "footer_text":"Your partner in achieving your health goals with reliable and accessible means."
   },
   "Links": {
     "FAQ's": "FAQ",
@@ -168,5 +176,17 @@
       },
       "no_article": "Article not found"
     }
+  },
+  "ArticlePage": {
+    "seo": {
+      "title_suffix": "| Tirze-Fit",
+      "default_description": "Read our comprehensive article on",
+      "default_keywords": "article, blog post, research"
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "blog": "Blog"
+    },
+    "no_article": "Article not found"
   }
 }

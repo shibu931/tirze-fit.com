@@ -88,8 +88,8 @@ export default async function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-12">
             <div className="sm:col-span-1"></div>
             <div className="sm:col-span-10 relative px-3">
-              <p className="md:text-xl text-white mb-4">Chcesz wiedzieć więcej o działaniu tirzepatydu, czy semaglutydu i innych naszych produktów  ? na blogu naszego sklepu dzielimy się aktualnymi badaniami i praktyczną wiedzą. Zachęcamy do odkrycia naszej pełnej oferty, aby w pełni wykorzystać potencjał nowoczesnych <strong>peptydów na odchudzanie</strong> .  Zastanawiales sie kiedyś gdzie kupic <strong>Semaglutyd</strong> ? kup  juz dziś I ciesz sie szczuplą sylwetką</p>
-              <Link href={'/shop'} className="banner-btn inline-block mt-4 text-white  px-4 py-1.5 font-semibold hover:cursor-pointer shadow-lg shadow-neutral-900/25 bg-blue-700 rounded hover:bg-blue-800">{t('banner_btn')}</Link>
+              <p className="md:text-xl text-white mb-4">Chcesz wiedzieć więcej o działaniu tirzepatydu, czy semaglutydu i innych naszych produktów  ? na blogu naszego sklepu dzielimy się aktualnymi badaniami i praktyczną wiedzą. Zachęcamy do odkrycia naszej pełnej oferty, aby w pełni wykorzystać potencjał nowoczesnych <strong>peptydów na odchudzanie</strong>. Zastanawiales sie kiedyś gdzie kupic <strong>Semaglutyd</strong> ? kup juz dziś I ciesz sie szczuplą sylwetką</p>
+              <Link href={'/blogs'} className="banner-btn inline-block mt-4 text-white  px-4 py-1.5 font-semibold hover:cursor-pointer shadow-lg shadow-neutral-900/25 bg-blue-700 rounded hover:bg-blue-800">{t('blog_btn')}</Link>
             </div>
           </div>
           <div className="sm:col-span-1"></div>
@@ -204,7 +204,7 @@ export default async function Home() {
             <div className="sm:col-span-1"></div>
             <div className="sm:col-span-10 relative px-3">
               <p className="md:text-xl text-white mb-4">Want to know more about the effects of tirzepatide, or semaglutide and our other products? On our store's blog, we share current research and practical knowledge. We encourage you to discover our full offer to fully use the potential of modern <strong>peptides for weight loss</strong> . Have you ever wondered where to buy <strong>Semaglutide</strong> ? Buy today and enjoy a slim figure</p>
-              <Link href={'/shop'} className="banner-btn inline-block mt-4 text-white  px-4 py-1.5 font-semibold hover:cursor-pointer shadow-lg shadow-neutral-900/25 bg-blue-700 rounded hover:bg-blue-800">{t('banner_btn')}</Link>
+              <Link href={'/blogs'} className="banner-btn inline-block mt-4 text-white  px-4 py-1.5 font-semibold hover:cursor-pointer shadow-lg shadow-neutral-900/25 bg-blue-700 rounded hover:bg-blue-800">{t('blog_btn')}</Link>
             </div>
           </div>
           <div className="sm:col-span-1"></div>

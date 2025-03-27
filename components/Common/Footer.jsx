@@ -4,6 +4,7 @@ import {Link} from '@/i18n/navigation';
 import React from 'react'
 import { FaInstagram, FaWhatsapp, FaFacebookF } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import Image from 'next/image';
 
 const Footer = () => {
   const t = useTranslations('Footer')
@@ -13,8 +14,16 @@ const Footer = () => {
       <div className="container mx-auto mb-8 px-3">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-x-12">
           <div className="">
-            <h2 className='text-3xl font-bold uppercase text-blue-700'>Tirzepatide</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto velit eius voluptatibus nesciunt perspiciatis voluptatem.</p>
+            <Link href="/">
+              <Image 
+                src="/assets/logo.png"
+                width={180}
+                height={120}
+                className=""
+                alt="Tirze-fit"
+              />
+            </Link>
+            <p>{t('footer_text')}</p>
           </div>
           <div className="">
           <p className='text-lg font-bold mb-2 uppercase tracking-wider'>{t('imp_link')}</p>

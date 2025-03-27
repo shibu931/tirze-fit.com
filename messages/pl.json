@@ -10,11 +10,12 @@
       "delivery_fee":"Opłata za dostawę",
       "subtotal":"Suma częściowa",
       "contact_title":"Kontakt i Wsparcie",
-      "contact_desc":"Masz pytania dotyczące terapii z tirzepatydem ? Chcesz dowiedzieć się więcej o poszczególnych produktach, takich jak semaglutyd lub Retatrutyd Skontaktuj się z nami już dziś! Nasz zespół ekspertów jest gotowy, aby udzielić Ci wszelkich informacji Wystarczy, że odwiedzisz naszą stronę kontaktową lub zadzwonisz na infolinię – jesteśmy do Twojej dyspozycji."
+      "contact_desc":"Masz pytania dotyczące terapii z tirzepatydem ? Chcesz dowiedzieć się więcej o poszczególnych produktach, takich jak semaglutyd lub Retatrutyd Skontaktuj się z nami już dziś! Nasz zespół ekspertów jest gotowy, aby udzielić Ci wszelkich informacji Wystarczy, że odwiedzisz naszą stronę kontaktową lub zadzwonisz na infolinię – jesteśmy do Twojej dyspozycji."   
     },
     "HomePage": {
       "title": "Witamy w naszym sklepie z odczynnikami chemicznymi najwyższej jakości.",
-      "banner_btn": "Przeglądaj sklep"
+      "banner_btn": "Przeglądaj sklep",
+      "blog_btn":"Zobacz blogi"
     },
     "Form":{
       "title":"Skontaktuj się z nami",
@@ -40,12 +41,19 @@
       "country": "Kraj",
       "country_placeholder": "Wpisz swój kraj",
       "address": "Adres",
-      "address_placeholder": "Wpisz pełny adres - Numer domu, Ulica, Miasto"
+      "address_placeholder": "Wpisz pełny adres - Numer domu, Ulica, Miasto",
+      "name_required": "Imię jest wymagane",
+      "email_required": "Adres e-mail jest wymagany",
+      "email_invalid": "Nieprawidłowy adres e-mail",
+      "message_required": "Wiadomość jest wymagana",
+      "submission_failed":"Wysłanie nie powiodło się",
+      "submission_success":"Success"
     },
     "Footer": {
       "contact_info": "Informacje kontaktowe",
       "imp_link": "Ważne linki",
-      "community": "Społeczność"
+      "community": "Społeczność",
+      "footer_text":"Twój partner w osiąganiu zdrowia dzięki niezawodnym i łatwo dostępnym rozwiązaniom."   
     },
     "Links": {
       "FAQ's": "FAQ",
@@ -155,30 +163,18 @@
       "breadcrumb": {
         "home": "Strona Główna",
         "blog": "Blog"
-      },
-      "ArticlePage": {
-        "seo": {
-          "title_suffix": "| Tirze-Fit",
-          "default_description": "Przeczytaj nasz szczegółowy artykuł na temat",
-          "default_keywords": "artykuł, post blogowy, badania"
-        },
-        "breadcrumb": {
-          "home": "Strona Główna",
-          "blog": "Blog"
-        },
-        "no_article": "Artykuł nie znaleziony"
       }
     },
     "ArticlePage": {
       "seo": {
         "title_suffix": "| Tirze-Fit",
-        "default_description": "Read our comprehensive article on",
-        "default_keywords": "article, blog post, research"
+        "default_description": "Przeczytaj nasz szczegółowy artykuł na temat",
+        "default_keywords": "artykuł, post blogowy, badania"
       },
       "breadcrumb": {
-        "home": "Home",
+        "home": "Strona Główna",
         "blog": "Blog"
       },
-      "no_article": "Article not found"
+      "no_article": "Artykuł nie znaleziony"
     }
   }

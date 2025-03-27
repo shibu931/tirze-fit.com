@@ -71,6 +71,17 @@ export async function generateMetadata({ params }) {
         noimageindex: false,
       },
     },
+    icons: {
+      icon: [
+        { url: '/android-chrome-192x192.png', type: 'image/png' },
+      ],
+      shortcut: ['/android-chrome-192x192.png'],
+      apple: '/apple-touch-icon.png',
+      other: {
+        rel: 'apple-touch-icon',
+        url: '/apple-touch-icon.png',
+      },
+    },
   };
 }
 

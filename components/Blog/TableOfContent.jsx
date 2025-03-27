@@ -41,14 +41,14 @@ const TableOfContent = ({ content }) => {
     const tocData = generateTOC(content);
 
     return (
-        <div className="table-of-contents lg:sticky top-20 bg-neutral-200/50 p-6 rounded border border-neutral-300/80 shadow-2xl shadow-neutral-400/50">
-            <Accordion type="single" defaultValue="item-1" collapsible className="w-full hover:cursor-pointer">
+        <div className="table-of-contents lg:sticky top-20 bg-neutral-200/25 p-6 py-2 rounded border border-neutral-300/80 shadow shadow-neutral-400/50">
+            <Accordion type="single" defaultValue="item-1" collapsible className="w-full hover:cursor-pointer"> 
                 <AccordionItem value="item-1" className="">
-                    <AccordionTrigger className="hover:no-underline">
-                        <h2 className="text-xl font-bold uppercase text-neutral-700">{t('toc')}</h2>
+                    <AccordionTrigger className="hover:no-underline py-2">
+                        <p className="text-xl font-bold uppercase text-neutral-700">{t('toc')}</p>
                     </AccordionTrigger>
                     <AccordionContent>
-                        <ul className="list-decimal ms-5 me-2">
+                        <ul className="list-decimal ms-2 me-2">
                             {tocData.map((item) => (
                                 <li key={item.id} className="text-base mb-3 text-neutral-800 font-semibold">
                                     <a href={`#${item.id}`} className="hover:underline">

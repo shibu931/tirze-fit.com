@@ -147,14 +147,14 @@ const page = async ({ params }) => {
   const locale = await getLocale()
   const { article } = await getArticle(locale, slug)
   return (
-    <main className='grid grid-cols-1 lg:grid-cols-10 gap-4'>
+    <main className='grid grid-cols-1 lg:grid-cols-10 lg:gap-4 gap-y-2 gap-x-0'>
       <BlogPostSchema article={article && article} locale={locale} />
       <BreadcrumbSchema article={article && article} locale={locale} />
       <PublisherSchema />
       <aside className='col-span-3 h-auto relative'>
         <TableOfContent content={article?.content} />
       </aside>
-      <div className="col-span-7 bg-neutral-200/50 p-6 rounded border border-neutral-300/80 shadow-2xl shadow-neutral-400/50" >
+      <div className="col-span-7 bg-neutral-200/25 p-6 rounded border border-neutral-300/80 shadow shadow-neutral-400/50" >
         {article?.content ? <ArticlePage content={article.content} /> : <p className='my-16 text-2xl font-bold text-center'>No Article Found</p>}
       </div>
     </main>
