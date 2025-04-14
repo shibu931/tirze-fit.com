@@ -1,5 +1,6 @@
 import ArticlePage from '@/components/Common/ArticlePage'
 import { getArticle } from '@/lib/actions/article.action'
+import { notFound } from 'next/navigation';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -43,7 +44,7 @@ export async function generateMetadata({ params }) {
       languages: {
         'x-default': canonicalUrl,
         ...(locale === 'en' ? {} : { 'en': new URL('/en/research', baseUrl).toString() }),
-        ...(locale === 'fr' ? {} : { 'fr': new URL('/fr/research', baseUrl).toString() }),
+        ...(locale === 'pl' ? {} : { 'pl': new URL('/pl/research', baseUrl).toString() }),
       },
     },
     openGraph: {
@@ -74,6 +75,7 @@ export async function generateMetadata({ params }) {
 }
 
 const page = async ({ params }) => {
+  return notFound()
   const { locale } = await params;
   const { article } = await getArticle(locale, 'research');
 

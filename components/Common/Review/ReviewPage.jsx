@@ -117,7 +117,7 @@ const ReviewPage = ({ slug }) => {
             </>
           ) : (
             <p className="text-lg font-semibold text-center my-10 text-red-700 sm:col-span-2">
-              {t('average_rating')}
+              {t('no_rating')}
             </p>
           )}
         </div>

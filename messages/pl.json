@@ -47,7 +47,9 @@
       "email_invalid": "Nieprawidłowy adres e-mail",
       "message_required": "Wiadomość jest wymagana",
       "submission_failed":"Wysłanie nie powiodło się",
-      "submission_success":"Success"
+      "submission_success":"Success",
+      "rev_succ_desc":"Twoja recenzja zostanie opublikowana po zweryfikowaniu",
+      "rev_err_desc":"Coś poszło nie tak"
     },
     "Footer": {
       "contact_info": "Informacje kontaktowe",
@@ -70,7 +72,10 @@
       "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
       "GLP-1+GIP vs other analogues": "GLP-1+GIP vs. inne analogi",
       "GLP-1+GIP": "GLP-1+GIP",
-      "Home": "Strona główna"
+      "Home": "Strona główna",
+      "Semaglutyd Labo Test":"Semaglutyd Labo Test",
+      "Retatrutyd Labo Test":"Retatrutyd Labo Test",
+      "Sema + cagri Labo Test":"Sema + cagri Labo Test"
     },
     "Cart":{
       "cart_title": "PRODUKTY W KOSZYKU",
@@ -119,7 +124,7 @@
       "load_more": "Załaduj więcej recenzji",
       "loading": "Ładowanie...",
       "no_reviews": "Żadna recenzja nie została jeszcze opublikowana",
-      "average_rating": "Średnia ocena"
+      "no_rating": "Nie otrzymano oceny"
     },
     "Checkout":{
       "chktout":"Kasa",
@@ -176,5 +181,24 @@
         "blog": "Blog"
       },
       "no_article": "Artykuł nie znaleziony"
+    },
+    "Products":{
+      "Semaglutyd 4mg (0,25-4mg)":"Semaglutyd 4mg (0.25-4mg)",
+      "Retatrutyd 4 mg Pen - TRIPLE G (0,25-4mg)":"Retatrutyd 4 mg Pen - TRIPLE G (0.25-4mg)",
+      "SemA + CAGRI PEN":"SEMA + CAGRI PEN"
+    },
+    "Research":{
+      "retatrutyd-labo-test-report": {
+        "title": "Raport z Badań Laboratoryjnych NOVAMED RETATRUTYD 4MG – Zweryfikowane Stężenie i Czystość Retatrutydu",
+        "description": "Zobacz certyfikowany raport z badań laboratoryjnych dla NOVAMED RETATRUTYD 4MG w fabrycznie napełnionym wstrzykiwaczu. Zweryfikowane stężenie 1,35 mg/ml (4,05 mg/3 ml) potwierdzone analizą chromatograficzną przez Laboratorium Analiza Białek. Zapoznaj się ze szczegółową czystością, metodologią badań i wynikami dostarczonymi przez wykwalifikowanych specjalistów."
+      },
+      "sema+cagri-labo-test-report": {
+        "title": "Analiza Laboratoryjna NOVAMED SEMA+CAGRI (Semaglutyd + Kagrilintyd) 2+2MG – Zweryfikowana Czystość i Stężenie",
+        "description": "Uzyskaj zweryfikowane wyniki badań laboratoryjnych dla NOVAMED SEMA+CAGRI 2+2MG, połączenia Semaglutydu i Kagrilintydu w fabrycznie napełnionym wstrzykiwaczu. Badane przez Laboratorium Analiza Białek przy użyciu zaawansowanej chromatografii, potwierdzające stężenia odpowiednio 0,72 mg/ml i 0,69 mg/ml. Zobacz szczegółową czystość, metodologię i analizę przeprowadzoną przez certyfikowanych specjalistów."
+      },
+      "semaglutyd-labo-test-report": {
+        "title": "Raport z Badań Laboratoryjnych NOVAMED SEMAGLUTYD 1MG – Certyfikat Zweryfikowanej Zawartości i Czystości Semaglutydu",
+        "description": "Zapoznaj się z oficjalnym raportem z badań laboratoryjnych dla fabrycznie napełnionego wstrzykiwacza NOVAMED SEMAGLUTYD 1MG, potwierdzającym stężenie 1,42 mg/ml (4,26 mg/3 ml). Analizowany przez Laboratorium Analiza Białek przy użyciu zaawansowanej chromatografii, ten raport dostarcza zweryfikowane dane dotyczące czystości, metody pobierania próbek i precyzyjnych warunków laboratoryjnych."
+      }
     }
   }

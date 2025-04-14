@@ -49,14 +49,14 @@ const ReviewForm = ({slug}) => {
             const result = await createReview(slug,reviewData)
             if(result.message === 'ok') {
                 setReviewData(reviewIinitalState)
-                toast.success("Sukces", {
-                    description: "Twoja recenzja zostanie opublikowana po zweryfikowaniu",
+                toast.success(f("submission_success"), {
+                    description: f("rev_succ_desc"),
                 })
             } 
         }catch (err){
             console.error("Error during review post: ",err);
-            toast.error("błąd", {
-                description: "Twoja recenzja zostanie opublikowana po zweryfikowaniu",
+            toast.error(f("submission_failed"), {
+                description: f("rev_err_desc"),
             })
         }finally{
             setLoading(false)

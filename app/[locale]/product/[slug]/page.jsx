@@ -12,9 +12,10 @@ import ReviewPage from '@/components/Common/Review/ReviewPage';
 import { getProduct } from '@/lib/actions/product.action';
 import AddToCartBtn from '@/components/Common/AddToCartBtn';
 import { getTranslations } from 'next-intl/server';
+import { getArticle } from '@/lib/actions/article.action';
 
 export async function generateMetadata({ params }) {
-  const { slug } = params;
+  const { slug, locale } = await params;
   const { data: product } = await getProduct(slug);
   const t = await getTranslations('Product_page');
   return {
@@ -131,8 +132,9 @@ const BreadcrumbSchema = () => {
 const page = async ({ params }) => {
   const t = await getTranslations('Common');
   const p = await getTranslations('Product_page');
-  const { slug } = await params
+  const { slug,locale } = await params
   const { data: product } = await getProduct(slug)
+  const { article } = await getArticle(locale, slug);
   const simplifiedProduct = {
     productId: product.productId,
     slug: product.slug,
@@ -212,6 +214,14 @@ const page = async ({ params }) => {
           </div>
         </div>
 
+      </section>
+
+      <section className="my-12 article">
+        {
+          article ? (<ArticlePage content={article && article.content} />)
+            :
+            ''
+        }
       </section>
 
       <section className='my-12'>

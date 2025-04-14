@@ -210,14 +210,15 @@ const NavMenu = ({ open, setOpen, pathname }) => {
                                 </NavigationMenuContent>
                             </>
                         ) : (
-                            <Link href={link.slug} onClick={open ? () => setOpen(!open) : null} className={`nav-link relative block `} legacyBehavior={true} passHref>
                                 <NavigationMenuLink
                                     className={`transition-colors nav-link duration-300 ${link.slug === url ? '!text-blue-700 active' : ''} ${navigationMenuTriggerStyle()}`}
+                                    asChild
                                 >
+                            <Link href={link.slug} onClick={open ? () => setOpen(!open) : null} className={`nav-link relative block `}>
                                     {l(link.label)}
                                     <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-blue-700 transition-all duration-300 under nav-underline" />
-                                </NavigationMenuLink>
                             </Link>
+                                </NavigationMenuLink>
                         )}
                     </NavigationMenuItem>
                 ))}

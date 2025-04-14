@@ -15,6 +15,21 @@ const nextConfig = {
           },
         ],
       },
+      webpack: (config, { isServer }) => {
+        if (!isServer) {
+          config.externals.push('canvas');
+        }
+    
+        config.module.rules.push({
+          test: /\.node$/,
+          use: 'node-loader',
+        });
+    
+        return config;
+      },
+      experimental: {
+        serverExternalPackages: ['canvas']
+      }
 };
 
 export default withNextIntl(nextConfig);;

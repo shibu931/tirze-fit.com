@@ -43,7 +43,7 @@ export async function generateMetadata({ params }) {
       languages: {
         'x-default': canonicalUrl,
         ...(locale === 'en' ? {} : { 'en': new URL('/en/privacy', baseUrl).toString() }),
-        ...(locale === 'fr' ? {} : { 'fr': new URL('/fr/privacy', baseUrl).toString() }),
+        ...(locale === 'pl' ? {} : { 'pl': new URL('/pl/privacy', baseUrl).toString() }),
       },
     },
     openGraph: {

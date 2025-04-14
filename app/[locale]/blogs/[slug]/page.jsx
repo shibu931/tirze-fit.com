@@ -7,6 +7,8 @@ import React from 'react'
 
 export async function generateMetadata({ params }) {
   const { slug } = params
+  console.log(slug);
+  
   const locale = await getLocale()
   const t = await getTranslations('ArticlePage')
   const { article } = await getArticle(locale, slug)
@@ -154,7 +156,7 @@ const page = async ({ params }) => {
       <aside className='col-span-3 h-auto relative'>
         <TableOfContent content={article?.content} />
       </aside>
-      <div className="col-span-7 bg-neutral-200/25 p-6 rounded border border-neutral-300/80 shadow shadow-neutral-400/50" >
+      <div className="col-span-7 bg-neutral-200/25 p-3 md:p-6 rounded border border-neutral-300/80 shadow shadow-neutral-400/50" >
         {article?.content ? <ArticlePage content={article.content} /> : <p className='my-16 text-2xl font-bold text-center'>No Article Found</p>}
       </div>
     </main>

@@ -1,59 +1,61 @@
 {
-  "Common":{
-    "disclaimer_txt":"All of the properties listed below have been observed in laboratory tests. They are for information purposes only. All information contained in the descriptions has not been approved by GIS, GIF or EFSA. The substance is not a food product or a dietary supplement. It is not suitable for human consumption. The product is classified as a chemical reagent / reference material permitted for marketing in the EU. It may only be used for scientific research. Other information about the product is included in the chemical safety data sheet, which we provide for review. The products are available to institutions or individuals who are associated with research or laboratory activities.",
-    "add_to_cart":"Add to cart",
-    "reviews":"Opinions",
-    "Star":"Star",
-    "blog":"Blog's",
-    "toc":"Contents",
-    "total":"Total",
-    "delivery_fee":"Delivery fee",
-    "subtotal":"Subtotal",
-    "contact_title":"Contact and Support",
-    "contact_desc":"Do you have questions about therapy with tirzepatide? Do you want to learn more about individual products, such as semaglutide or retatrutyde? Contact us today! Our team of experts is ready to provide you with all the information. Just visit our contact page or call our hotline - we are at your disposal."
+  "Common": {
+    "disclaimer_txt": "All of the properties listed below have been observed in laboratory tests. They are for information purposes only. All information contained in the descriptions has not been approved by GIS, GIF or EFSA. The substance is not a food product or a dietary supplement. It is not suitable for human consumption. The product is classified as a chemical reagent / reference material permitted for marketing in the EU. It may only be used for scientific research. Other information about the product is included in the chemical safety data sheet, which we provide for review. The products are available to institutions or individuals who are associated with research or laboratory activities.",
+    "add_to_cart": "Add to cart",
+    "reviews": "Opinions",
+    "Star": "Star",
+    "blog": "Blog's",
+    "toc": "Contents",
+    "total": "Total",
+    "delivery_fee": "Delivery fee",
+    "subtotal": "Subtotal",
+    "contact_title": "Contact and Support",
+    "contact_desc": "Do you have questions about therapy with tirzepatide? Do you want to learn more about individual products, such as semaglutide or retatrutyde? Contact us today! Our team of experts is ready to provide you with all the information. Just visit our contact page or call our hotline - we are at your disposal."
   },
   "HomePage": {
     "title": "Welcome to our store with the highest quality chemical reagents.",
     "banner_btn": "Browse the store",
-    "blog_btn":"View Blogs"
+    "blog_btn": "View Blogs"
   },
-  "Form":{
-    "title":"Contact Us",
-    "name":"Name",
-    "phone":"Phone Number",
-    "phone_placeholder":"Enter your phone number.",
-    "name_placeholder":"Enter your name and surname",
-    "email":"Email",
-    "email_placeholder":"Your email address",
-    "message":"Message",
-    "message_placeholder":"Your opinion",
-    "review_placeholder":"Your review",
-    "checkbox_label":"I consent to the processing of my personal data contained in the contact form for the purposes necessary to implement and service the contact process in accordance with the Act of 29 August 1997 on the protection of personal data (Journal of Laws of 2002, No. 101, item 926, as amended).",
-    "Submit":"Submit",
-    "loading":"Processing",
-    "search_placeholder":"Search for products",
-    "review_form_title":"Leave a review",
-    "rating_placeholder":"Select rating",
-    "review_post_btn":"Post a review",
-    "checkout_form_title":"Adres",
-    "delivery_opt":"Delivery Options",
-    "pmn":"Parcel locker number",
+  "Form": {
+    "title": "Contact Us",
+    "name": "Name",
+    "phone": "Phone Number",
+    "phone_placeholder": "Enter your phone number.",
+    "name_placeholder": "Enter your name and surname",
+    "email": "Email",
+    "email_placeholder": "Your email address",
+    "message": "Message",
+    "message_placeholder": "Your opinion",
+    "review_placeholder": "Your review",
+    "checkbox_label": "I consent to the processing of my personal data contained in the contact form for the purposes necessary to implement and service the contact process in accordance with the Act of 29 August 1997 on the protection of personal data (Journal of Laws of 2002, No. 101, item 926, as amended).",
+    "Submit": "Submit",
+    "loading": "Processing",
+    "search_placeholder": "Search for products",
+    "review_form_title": "Leave a review",
+    "rating_placeholder": "Select rating",
+    "review_post_btn": "Post a review",
+    "checkout_form_title": "Adres",
+    "delivery_opt": "Delivery Options",
+    "pmn": "Parcel locker number",
     "country": "Country",
     "country_placeholder": "Enter your country",
     "address": "Adres",
     "address_placeholder": "Enter full address - House number, Street, City",
-    "name_required":"Name is required",
-    "email_required":"Email is required",
-    "email_invalid":"Email is invalid",
-    "message_required":"Message is required",
-    "submission_failed":"Submission Failed",
-    "submission_success":"Success"
+    "name_required": "Name is required",
+    "email_required": "Email is required",
+    "email_invalid": "Email is invalid",
+    "message_required": "Message is required",
+    "submission_failed": "Error",
+    "submission_success": "Success",
+    "rev_succ_desc":"Your review will be published after verification",
+    "rev_err_desc":"Something went wrong"
   },
   "Footer": {
     "contact_info": "Contact Information",
     "imp_link": "Important links",
     "community": "Community",
-    "footer_text":"Your partner in achieving your health goals with reliable and accessible means."
+    "footer_text": "Your partner in achieving your health goals with reliable and accessible means."
   },
   "Links": {
     "FAQ's": "FAQ",
@@ -70,37 +72,40 @@
     "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
     "GLP-1+GIP vs other analogues": "GLP-1+GIP vs. inne analogi",
     "GLP-1+GIP": "GLP-1+GIP",
-    "Home": "Home Page"
+    "Home": "Home Page",
+    "Semaglutyd Labo Test":"Semaglutide Labo Test",
+    "Retatrutyd Labo Test":"Retatrutide Labo Test",
+    "Sema + cagri Labo Test":"Sema + cagri Labo Test"
   },
-  "Cart":{
+  "Cart": {
     "cart_title": "PRODUCTS IN CART",
     "empty_cart": "No products in cart",
     "cart_ttl_amt": "Total cart amount",
     "chkt": "Checkout",
-    "price":"Cena"
+    "price": "Cena"
   },
-  "Product_page":{
-    "weight_loss":"Weight loss program",
-    "legal_desc":"The substance is not a food product or a dietary supplement, it is not suitable for human consumption. The product is classified as a chemical reagent permitted for sale in the European Union, it can only be used for scientific research.",
-    "usp":{
-      "return_usp":"14 Day Returns Policy",
-      "lab_ql_usp":"Laboratory quality",
-      "shopping_usp":"Safe Shopping",
-      "shipping":"Shipping time",
-      "shipping_time":"1-2 business days",
-      "quality":"quality guarantee",
-      "stand_lab":"laboratory standard"
+  "Product_page": {
+    "weight_loss": "Weight loss program",
+    "legal_desc": "The substance is not a food product or a dietary supplement, it is not suitable for human consumption. The product is classified as a chemical reagent permitted for sale in the European Union, it can only be used for scientific research.",
+    "usp": {
+      "return_usp": "14 Day Returns Policy",
+      "lab_ql_usp": "Laboratory quality",
+      "shopping_usp": "Safe Shopping",
+      "shipping": "Shipping time",
+      "shipping_time": "1-2 business days",
+      "quality": "quality guarantee",
+      "stand_lab": "laboratory standard"
     },
-    "product_warning":{
-      "title":"Product intended for research purposes",
-      "additional_info":"ADDITIONAL INFORMATION:",
-      "point_one":"The product (substance) is not a food product or a dietary supplement, it is not suitable for human consumption.",
-      "point_two":"Keep away from children.",
-      "point_three":"Keep container tightly closed.",
-      "point_four":"Store in a dry, cool, shaded place; protect from moisture.",
-      "point_five":"Keep only in original packaging.",
-      "point_six":"Avoid contact during pregnancy and breastfeeding.",
-      "point_seven":"In case of feeling unwell or adverse reactions related to contact with the substance, consult a doctor."
+    "product_warning": {
+      "title": "Product intended for research purposes",
+      "additional_info": "ADDITIONAL INFORMATION:",
+      "point_one": "The product (substance) is not a food product or a dietary supplement, it is not suitable for human consumption.",
+      "point_two": "Keep away from children.",
+      "point_three": "Keep container tightly closed.",
+      "point_four": "Store in a dry, cool, shaded place; protect from moisture.",
+      "point_five": "Keep only in original packaging.",
+      "point_six": "Avoid contact during pregnancy and breastfeeding.",
+      "point_seven": "In case of feeling unwell or adverse reactions related to contact with the substance, consult a doctor."
     },
     "seo": {
       "title_suffix": "Best Weight Loss Solution | Tirze-Fit",
@@ -114,27 +119,27 @@
     "price_label": "CENA",
     "product_image_alt": "Product visual presentation"
   },
-  "Review_page":{
+  "Review_page": {
     "based_on_ratings": "Based on {count} {count, plural, one {ratings} few {ratings} many {ratings} other {ratings}}",
     "load_more": "Load more reviews",
     "loading": "Loading...",
     "no_reviews": "No reviews have been published yet",
-    "average_rating": "Average rating"
+    "no_rating": "No Rating Received"
   },
-  "Checkout":{
-    "chktout":"Country",
-    "ordr_summary":"Order Summary",
-    "delivery_charges":"Delivery charges"
+  "Checkout": {
+    "chktout": "Country",
+    "ordr_summary": "Order Summary",
+    "delivery_charges": "Delivery charges"
   },
-  "Order_Info_Page":{
-    "order_msg":"Our account manager will send you the bank account number where you will receive your payment within 2 hours of placing your order. Your order will be confirmed only after successful payment.",
-    "detail_info":"Detailed information",
-    "orderId":"Order ID",
-    "date":"Posted on",
-    "shipping_address":"Shipping address",
-    "ordr_status":"Order Status",
-    "status":"Status",
-    "ordrd_products":"Ordered products"
+  "Order_Info_Page": {
+    "order_msg": "Our account manager will send you the bank account number where you will receive your payment within 2 hours of placing your order. Your order will be confirmed only after successful payment.",
+    "detail_info": "Detailed information",
+    "orderId": "Order ID",
+    "date": "Posted on",
+    "shipping_address": "Shipping address",
+    "ordr_status": "Order Status",
+    "status": "Status",
+    "ordrd_products": "Ordered products"
   },
   "BlogListPage": {
     "seo": {
@@ -188,5 +193,24 @@
       "blog": "Blog"
     },
     "no_article": "Article not found"
+  },
+  "Products": {
+    "Semaglutyd 4mg (0,25-4mg)": "Semaglutide 4mg (0.25-4mg)",
+    "Retatrutyd 4 mg Pen - TRIPLE G (0,25-4mg)": "Retatrutide 4 mg Pen - TRIPLE G (0.25-4mg)",
+    "SemA + CAGRI PEN": "SEMA + CAGRI PEN"
+  },
+  "Research":{
+    "retatrutyd-labo-test-report":{
+      "title":"Lab-Tested NOVAMED RETATRUTIDE 4MG – Verified Retatrutide Concentration & Purity Report",
+      "description":"View the certified lab test report for NOVAMED RETATRUTIDE 4MG in a pre-filled pen. Verified concentration of 1.35mg/ml (4.05mg/3ml) confirmed through chromatographic analysis by Analiza Białek Laboratory. Explore detailed purity, testing methodology, and results provided by qualified specialists."
+    },
+    "sema+cagri-labo-test-report":{
+      "title":"Lab-Tested Analysis of NOVAMED SEMA+CAGRI (Semaglutide + Cagrilintide) 2+2MG – Verified Purity & Concentration",
+      "description":"Get verified lab test results for NOVAMED SEMA+CAGRI 2+2MG, a combination of Semaglutide and Cagrilintide in a pre-filled pen. Tested by Analiza Białek Lab using advanced chromatography, confirming concentrations of 0.72mg/ml and 0.69mg/ml respectively. View detailed purity, methodology, and analysis conducted by certified specialists."
+    },
+    "semaglutyd-labo-test-report":{
+      "title":"Lab-Tested NOVAMED SEMAGLUTIDE 1MG – Verified Semaglutide Content & Purity Certification",
+      "description":"Explore the official lab test report for NOVAMED SEMAGLUTIDE 1MG pre-filled pen, confirming a concentration of 1.42mg/ml (4.26mg/3ml). Analyzed by Analiza Białek Laboratory using advanced chromatography, this report provides verified data on purity, sampling method, and precise lab conditions."
+    }
   }
 }
