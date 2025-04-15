@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import Script from "next/script";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -153,7 +154,18 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={locale}>
       <head>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8VBPBP46SM"></Script>
+        <Script>
+          {
+            `window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-8VBPBP46SM');
+            `
+          }
+        </Script>
         <StructuredData locale={locale} />
+        <meta name="google-site-verification" content="9ceNRVxKxsqcPHG5KRTV9EQE5NY-qqoUD9NrhPTlXtI" />
       </head>
       <body
         className={`${roboto.className} antialiased`}

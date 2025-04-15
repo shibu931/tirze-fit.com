@@ -13,6 +13,7 @@ import { getProduct } from '@/lib/actions/product.action';
 import AddToCartBtn from '@/components/Common/AddToCartBtn';
 import { getTranslations } from 'next-intl/server';
 import { getArticle } from '@/lib/actions/article.action';
+import ArticlePage from '@/components/Common/ArticlePage';
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
@@ -188,7 +189,7 @@ const page = async ({ params }) => {
       <section className='my-12'>
         <h2 className='font-bold text-lg md:text-xl uppercase text-gray-900 tracking-wider'>{p('product_warning.title')}</h2>
         <p className='mt-2 text-blue-800 uppercase font-semibold'>{p('product_warning.additional_info')}</p>
-        <ul className='text-gray-600 text-sm space-y-2 ps-4 list-disc mt-4'>
+        <ul className='text-gray-600 text-sm space-y-2 ps-4 list-disc mt-2'>
           <li>{p('product_warning.point_one')}</li>
           <li>{p('product_warning.point_two')}</li>
           <li>{p('product_warning.point_three')}</li>
@@ -216,7 +217,7 @@ const page = async ({ params }) => {
 
       </section>
 
-      <section className="my-12 article">
+      <section className="my-14 article">
         {
           article ? (<ArticlePage content={article && article.content} />)
             :
@@ -224,7 +225,7 @@ const page = async ({ params }) => {
         }
       </section>
 
-      <section className='my-12'>
+      <section className='mt-12'>
         <ReviewPage slug={slug} />
       </section>
 

@@ -26,8 +26,8 @@ const PdfViewer = ({ filename }) => {
     if (!ViewerComponent) return <div>Loading PDF viewer...</div>;
 
     return (
-        <div className="h-[80vh] w-full">
-            <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js">
+        <div className="w-full">
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.js">
                 <Viewer 
                     fileUrl={fileUrl}
                     plugins={[defaultLayoutPluginInstance]}

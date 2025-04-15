@@ -1,0 +1,4 @@
+# public/robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://tirze-fit.com/sitemap.xml
