@@ -1,8 +1,8 @@
 'use client';
 import { LoadingOverlay } from '@/components/Common/Loading';
+import { Link } from '@/i18n/navigation';
 import { getOrderById } from '@/lib/actions/order.action.js';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 

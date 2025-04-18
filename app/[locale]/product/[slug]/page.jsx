@@ -6,7 +6,6 @@ import { ImLab } from "react-icons/im";
 import { IoCart, IoShieldCheckmarkSharp } from "react-icons/io5";
 import { TbTruckReturn } from "react-icons/tb";
 import RatingStar from '@/components/Common/RatingStar'
-import Link from 'next/link';
 import { currency } from '@/lib/constants/commonName';
 import ReviewPage from '@/components/Common/Review/ReviewPage';
 import { getProduct } from '@/lib/actions/product.action';
@@ -14,6 +13,7 @@ import AddToCartBtn from '@/components/Common/AddToCartBtn';
 import { getTranslations } from 'next-intl/server';
 import { getArticle } from '@/lib/actions/article.action';
 import ArticlePage from '@/components/Common/ArticlePage';
+import { Link } from '@/i18n/navigation';
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;

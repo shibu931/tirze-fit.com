@@ -13,10 +13,10 @@ import {
 import { BsCart2 } from "react-icons/bs";
 import Image from 'next/image';
 import { RxCross1 } from "react-icons/rx";
-import Link from 'next/link';
 import { currency } from '@/lib/constants/commonName';
 import { useCart } from '@/context/CartContext';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 // const cart = {
 //     cardId: 123,

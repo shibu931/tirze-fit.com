@@ -21,7 +21,8 @@ export default async function Home() {
             src={'/assets/banner.webp'}
             width={1000}
             height={667}
-            alt=""
+            alt="Tirze-Fit"
+            priority
             className="-z-10 w-full h-[400px] md:h-[600px] object-cover object-top"
           />
         </div>

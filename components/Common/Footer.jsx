@@ -38,10 +38,10 @@ const Footer = () => {
           <div>
           <p className='text-lg font-bold mb-2 uppercase tracking-wider'>{t('community')}</p>
             <ul className='flex space-x-3 !ps-0'>
-              <li><Link href={'#'}><FaInstagram className='text-xl'/></Link></li>
-              <li><Link href={'#'}><FaWhatsapp  className='text-xl'/></Link></li>
-              <li><Link href={'#'}><RiTwitterXLine  className='text-xl'/></Link></li>
-              <li><Link href={'#'}><FaFacebookF  className='text-xl'/></Link></li>
+              <li><Link aria-label='Instagram' href={'#'}><FaInstagram className='text-xl'/></Link></li>
+              <li><Link aria-label='WhatsApp' href={'#'}><FaWhatsapp  className='text-xl'/></Link></li>
+              <li><Link aria-label='Twitter' href={'#'}><RiTwitterXLine  className='text-xl'/></Link></li>
+              <li><Link aria-label='Facebook' href={'#'}><FaFacebookF  className='text-xl'/></Link></li>
             </ul>
           </div>
         </div>

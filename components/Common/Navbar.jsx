@@ -108,7 +108,7 @@ const MobileNav = ({ pathname }) => {
     return (
         <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-                <button variant="outline" className="hover:cursor-pointer hover:bg-neutral-200 rounded hover:shadow transition-all duration-200 p-2"><RiMenu3Line className="text-[1.65rem]" /></button>
+                <button variant="outline" aria-label="Menu Button" className="hover:cursor-pointer hover:bg-neutral-200 rounded hover:shadow transition-all duration-200 p-2"><RiMenu3Line className="text-[1.65rem]" /></button>
             </SheetTrigger>
             <SheetContent>
                 <SheetHeader>

@@ -1,10 +1,10 @@
 import { currency } from '@/lib/constants/commonName'
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { IoCart } from "react-icons/io5";
 import AddToCartBtn from './AddToCartBtn'
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/navigation';
 
 const ProductCard = ({product}) => {
   const t = useTranslations('Common')
@@ -20,7 +20,7 @@ const ProductCard = ({product}) => {
         />
         </div>
         <hr className='border-gray-300 mb-3'/>
-        <Link href={"/product/"+product?.slug}><h4 className='product-card-title'>{product?.productName}</h4></Link>
+        <Link href={"/product/"+product?.slug}><p className='product-card-title'>{product?.productName}</p></Link>
         <hr className='border-gray-300 my-2'/>
         <span className='block text-center'>Cena: <span className='text-lg font-medium'>{product?.productPrice} {currency}</span></span>
         <hr className='border-gray-300 my-2'/>

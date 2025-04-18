@@ -1,9 +1,9 @@
 'use client'
 import { useCart } from '@/context/CartContext';
+import { Link } from '@/i18n/navigation';
 import { currency } from '@/lib/constants/commonName'
 import { useTranslations } from 'next-intl';
 import Image from 'next/image'
-import Link from 'next/link'
 
 const CheckoutProductSummary = () => {
   const t = useTranslations('Checkout')
