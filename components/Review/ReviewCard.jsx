@@ -1,7 +1,7 @@
 // components/ReviewCard.js
 'use client'
 import React from 'react';
-import RatingStar from '../RatingStar';
+import RatingStar from '../Common/RatingStar';
 const ReviewCard = ({ name, rating, message, date }) => {    
     const firstLetter = name.split(" ")
         .map((word) => word.charAt(0))

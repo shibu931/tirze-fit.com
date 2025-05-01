@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import ReviewForm from './ReviewForm';
 import ReviewCard from './ReviewCard';
-import RatingStar from '../RatingStar';
+import RatingStar from '../Common/RatingStar';
 import StarRatingBar from './StarRatingBar';
 import { getReviewBySlug } from '@/lib/actions/review.action';
 import { useTranslations } from 'next-intl';

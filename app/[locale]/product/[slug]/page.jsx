@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react'
 import { FaRegClock } from "react-icons/fa";
 import { FaThermometerHalf } from "react-icons/fa";
@@ -6,18 +5,18 @@ import { ImLab } from "react-icons/im";
 import { IoCart, IoShieldCheckmarkSharp } from "react-icons/io5";
 import { TbTruckReturn } from "react-icons/tb";
 import RatingStar from '@/components/Common/RatingStar'
-import { currency } from '@/lib/constants/commonName';
-import ReviewPage from '@/components/Common/Review/ReviewPage';
 import { getProduct } from '@/lib/actions/product.action';
 import AddToCartBtn from '@/components/Common/AddToCartBtn';
 import { getTranslations } from 'next-intl/server';
 import { getArticle } from '@/lib/actions/article.action';
 import ArticlePage from '@/components/Common/ArticlePage';
 import { Link } from '@/i18n/navigation';
+import ProductImage from '@/components/ProductPage/ProductImage';
+import ReviewPage from '@/components/Review/ReviewPage';
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
-  const { data: product } = await getProduct(slug);
+  const { data: product } = await getProduct(slug, locale);
   const t = await getTranslations('Product_page');
   return {
     title: `${product.productName} | ${t('seo.title_suffix')}`,
@@ -63,7 +62,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const ProductSchema = ({ product }) => {
+const ProductSchema = ({ product, locale }) => {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -77,7 +76,7 @@ const ProductSchema = ({ product }) => {
     "offers": {
       "@type": "Offer",
       "url": `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.slug}`,
-      "priceCurrency": currency,
+      "priceCurrency": locale === 'en' ? 'EUR' : 'PLN' ,
       "price": product.productPrice,
       "availability": "https://schema.org/InStock",
       "itemCondition": "https://schema.org/NewCondition"
@@ -134,29 +133,30 @@ const page = async ({ params }) => {
   const t = await getTranslations('Common');
   const p = await getTranslations('Product_page');
   const { slug,locale } = await params
-  const { data: product } = await getProduct(slug)
+  const { data: product } = await getProduct(slug, locale)
   const { article } = await getArticle(locale, slug);
   const simplifiedProduct = {
     productId: product.productId,
     slug: product.slug,
     productName: product.productName,
     productPrice: product.productPrice,
-    productImage: product.productImage[0].thumb,
+    productImage:product.productImage.map(img => ({
+      thumb: img.thumb,
+      large: img.large
+    })),
   };
   return (
     <main>
-      <ProductSchema product={product} />
+      <ProductSchema product={product} locale={locale} />
       <BreadcrumbSchema />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12">
-        <div className='flex justify-center border border-gray-400'>
-          <Image
-            src={product?.productImage[0].large}
-            width={400}
-            height={400}
-            alt={product.productName}
-            priority
-          />
-        </div>
+          {simplifiedProduct.productImage && simplifiedProduct.productImage.length > 0 ? (
+            <ProductImage productImages={simplifiedProduct?.productImage} productName={simplifiedProduct.productName} />
+          ) : (
+            <div className="flex justify-center items-center h-full">
+              <p className="text-gray-500">{p('no_image')}</p>
+            </div>
+          )}
         <div>
           <h1 className='font-extrabold uppercase text-blue-800 text-2xl sm:text-3xl lg:text-4xl'>{product.productName}</h1>
           <p className='text-lg sm:text-xl lg:text-2xl text-gray-400'>{p('weight_loss')}</p>
@@ -178,7 +178,7 @@ const page = async ({ params }) => {
           <div className='flex mt-4'><Link href="#reviews" className='hover:underline hover:text-blue-700'>{t('reviews')}</Link>
             <RatingStar rating={5} className={'text-xl'} />
           </div>
-          <p className="text-2xl text-gray-700 mt-6 mb-2">CENA: <span className='text-gray-800 font-medium'>{product?.productPrice} {currency}</span></p>
+          <p className="text-2xl text-gray-700 mt-6 mb-2">{t('price')}: <span className='text-gray-800 font-medium'>{product?.productPrice} {t('currency')}</span></p>
           <AddToCartBtn product={simplifiedProduct} className='flex items-center font-medium border border-blue-800 px-3 py-2 bg-blue-700 text-white hover:bg-blue-800 hover:shadow shadow-gray-400 hover:cursor-pointer transition-all duration-200'>
             <IoCart className='me-2 text-[20px]' />
             {t('add_to_cart')}

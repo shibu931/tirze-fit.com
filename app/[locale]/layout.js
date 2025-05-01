@@ -8,7 +8,8 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import Script from "next/script";
-
+import AuthProvider from "./AuthProvider";
+import { populateDB } from "@/lib/actions/product.action";
 const roboto = Roboto({
   subsets: ["latin"],
 });
@@ -170,14 +171,16 @@ export default async function RootLayout({ children, params }) {
       <body
         className={`${roboto.className} antialiased`}
       >
-        <NextIntlClientProvider>
-          <CartProvider>
-            <Navbar />
-            {children}
-            <Footer />
-            <Toaster richColors />
-          </CartProvider>
-        </NextIntlClientProvider>
+          <NextIntlClientProvider>
+        <AuthProvider>
+            <CartProvider>
+              <Navbar locale={locale}/>
+              {children}
+              <Footer />
+              <Toaster richColors />
+            </CartProvider>
+        </AuthProvider>
+          </NextIntlClientProvider>
       </body>
     </html>
   );

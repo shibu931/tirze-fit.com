@@ -1,4 +1,5 @@
 'use client'
+import { useLocale } from "next-intl";
 import { createContext, useContext, useState, useEffect } from "react";
 
 const CartContext = createContext();
@@ -7,6 +8,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(null);
   const [loading, setLoading] = useState(true);
   const [productTotal, setProductTotal] = useState(0);
+  const locale  = useLocale()
 
   const fetchCart = async () => {
     try {
@@ -26,6 +28,9 @@ export const CartProvider = ({ children }) => {
     if (!cart) {
       const newCart = {
         item: [{ ...item, quantity: item.quantity || 1 }],
+        deliveryCharges: 25,
+        discount:0,
+        couponDiscount:0,
         modifiedTime: currentTime,
       };
       setCart(newCart);
@@ -84,7 +89,6 @@ export const CartProvider = ({ children }) => {
         item.productId === productId ? { ...item, quantity } : item
       ),
     };
-    console.log(updatedCart);
     localStorage.setItem("cart", JSON.stringify(updatedCart));
     setCart(updatedCart);
   };
@@ -95,22 +99,36 @@ export const CartProvider = ({ children }) => {
   };
 
   const calculateCartTotal = (cart) => {
-    if (!cart || !cart.item || cart.item.length === 0) return setProductTotal(0);
-
+    if (!cart || !cart.item || cart.item.length === 0) {
+      setProductTotal(0);
+      return;
+    }
+  
     const total = cart.item.reduce((total, item) => {
-      return total + item.productPrice * parseInt(item.quantity);
+      const productPrice = locale === 'en' ? item.productPriceEn : item.productPricePl;
+      return total + productPrice * parseInt(item.quantity);
     }, 0);
-
+  
     setProductTotal(total);
   };
-
+  
   useEffect(() => {
-    calculateCartTotal(cart)
-  }, [cart])
+    calculateCartTotal(cart);
+  }, [cart, locale]); 
 
-  useEffect(() => {
+  useEffect(() => {    
     fetchCart();
   },[]);
+
+  useEffect(() => {
+    if (cart) {
+      const updatedCart = {
+        ...cart,
+        modifiedAt: new Date().toISOString(), 
+      };
+      localStorage.setItem('cart', JSON.stringify(updatedCart));
+    }
+  }, [cart]);
 
   return (
     <CartContext.Provider
@@ -118,6 +136,7 @@ export const CartProvider = ({ children }) => {
         cart,
         loading,
         addToCart,
+        setCart,
         removeFromCart,
         updateCartItemQuantity,
         clearCart,

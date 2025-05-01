@@ -13,88 +13,41 @@ import {
 import { BsCart2 } from "react-icons/bs";
 import Image from 'next/image';
 import { RxCross1 } from "react-icons/rx";
-import { currency } from '@/lib/constants/commonName';
 import { useCart } from '@/context/CartContext';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 
-// const cart = {
-//     cardId: 123,
-//     products: [
-//         {
-//             productId: '12',
-//             productImage: 'https://tirzepatyd.store/wp-content/uploads/2024/09/tirze15.png',
-//             productName: 'GLP-1+GIP (TIRZEPATYD) 15mg FIOLKA',
-//             productPrice: 32.23,
-//             slug: '/product/GLP-1+GIP-(TIRZEPATYD)-15mg-FIOLKA',
-//             quantity: 1,
-//             totalProductPrice: 32.22
-//         },
-//         {
-//             productId: '22',
-//             productImage: 'https://tirzepatyd.store/wp-content/uploads/2024/09/tirze15.png',
-//             productName: 'GLP-1+GIP (TIRZEPATYD) 15mg FIOLKA',
-//             productPrice: 32.23,
-//             slug: '/product/GLP-1+GIP-(TIRZEPATYD)-15mg-FIOLKA',
-//             quantity: 1,
-//             totalProductPrice: 32.22
-//         },
-//         {
-//             productId: '2',
-//             productImage: 'https://tirzepatyd.store/wp-content/uploads/2024/09/tirze15.png',
-//             productName: 'GLP-1+GIP (TIRZEPATYD) 15mg FIOLKA',
-//             productPrice: 32.23,
-//             slug: '/product/GLP-1+GIP-(TIRZEPATYD)-15mg-FIOLKA',
-//             quantity: 1,
-//             totalProductPrice: 32.22
-//         },
-//         {
-//             productId: '4',
-//             productImage: 'https://tirzepatyd.store/wp-content/uploads/2024/09/tirze15.png',
-//             productName: 'GLP-1+GIP (TIRZEPATYD) 15mg FIOLKA',
-//             productPrice: 32.23,
-//             slug: '/product/GLP-1+GIP-(TIRZEPATYD)-15mg-FIOLKA',
-//             quantity: 1,
-//             totalProductPrice: 32.22
-//         },
-//     ],
-//     cartTotal: 23,
-//     deliveryCharges: 20,
-//     couponCode: '',
-//     userId: '123',
-//     createdAt: new Date(),
-//     updatedAt: new Date()
-// }
-
 const Cart = () => {
+    const locale = useLocale()
     const t = useTranslations('Cart')
+    const c = useTranslations('Common')
     const {cart, productTotal} = useCart()
     return (
       <Dialog>
         <DialogTrigger className="hover:bg-blue-100 rounded p-1 hover:shadow-lg hover:border border-blue-200 hover:text-blue-700 hover:cursor-pointer relative">
           <BsCart2 className="text-[1.35rem] mt-1" />
-          <span className="absolute bg-blue-800 rounded-full text-white font-bold text-xs w-[15px] h-[15px] top-1 -right-1">{cart?.item.length || 0}</span>
+          <span className="absolute bg-blue-800 rounded-full text-white font-bold text-xs w-[15px] h-[15px] top-1 -right-1">{cart?.item?.length || 0}</span>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
             <DialogTitle className="tracking-wider text-center">{t('cart_title')}</DialogTitle>
           </DialogHeader>
           <ul className="h-[380px] overflow-y-scroll border-t border-b border-gray-400 px-2 cart-list my-2">
-            {cart?.item.length > 0 ? (
-              cart?.item.map((item,index) => <CartItem key={index} item={item}/>)
+            {cart?.item?.length > 0 ? (
+              cart?.item?.map((item,index) => <CartItem key={index} item={item} locale={locale}/>)
             ) : (
               <li>
                 <p className='text-center my-8 text-red-700'>{t('empty_cart')}</p>
               </li>
             )}
           </ul>
-          <p className='font-semibold uppercase'>{t('cart_ttl_amt')}: {productTotal} {currency}</p>
+          <p className='font-semibold uppercase'>{t('cart_ttl_amt')}: {productTotal} {c('currency')}</p>
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
             <Link
-              href={`${cart?.item.length > 0 ? '/checkout' : '#'}`}
-              aria-disabled={cart?.item.length > 0 ? false : true}
-              className={`text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex w-full justify-center items-center me-2 ${cart?.item.length > 0 ? 'bg-blue-700' : 'bg-gray-400'}`}
+              href={`${cart?.item?.length > 0 ? '/checkout' : '#'}`}
+              aria-disabled={cart?.item?.length > 0 ? false : true}
+              className={`text-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm px-5 py-2.5 text-center inline-flex w-full justify-center items-center me-2 ${cart?.item?.length > 0 ? 'bg-blue-700' : 'bg-gray-400'}`}
             >
               <svg
                 className="w-3.5 h-3.5 me-2"
@@ -116,9 +69,10 @@ const Cart = () => {
   
   export default Cart;
   
-  function CartItem({ item, currency }) {
+  function CartItem({ item, locale }) {
     const {updateCartItemQuantity, removeFromCart} = useCart()
     const t = useTranslations('Cart')
+    const c = useTranslations('Common')
     const quantityInputRef = useRef(null);
     const [isOpen, setIsOpen] = useState(false); 
     const [showInput, setShowInput] = useState(false);
@@ -193,7 +147,7 @@ const Cart = () => {
   
             </div>
             <p>
-              {t('price')}: {item.productPrice * item.quantity} {currency}
+              {t('price')}: {(locale === 'en' ? item.productPriceEn: item.productPricePl) * item.quantity} {c('currency')}
             </p>
           </div>
         </div>

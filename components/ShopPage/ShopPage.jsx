@@ -1,14 +1,18 @@
 import React from 'react'
 import ProductCard from '../Common/ProductCard'
 import { getProducts } from '@/lib/actions/product.action'
+import { getLocale } from 'next-intl/server'
 
 const ShopPage = async () => {
-  const { data } = await getProducts()
+  const locale = await getLocale()
+  const { data } = await getProducts(locale)
   const products = data.map((product) => ({
     productId:product.productId,
     slug: product.slug,
     productName: product.productName,
     productPrice: product.productPrice,
+    productPriceEn: product.productPriceEn,
+    productPricePl: product.productPricePl,
     productImage: [{ thumb: product.productImage[0].thumb }], // Only thumb
   }));
   return (

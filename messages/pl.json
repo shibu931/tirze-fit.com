@@ -1,204 +1,238 @@
 {
-    "Common":{
-      "disclaimer_txt":"Wszystkie niżej wymienione właściwości zostały zaobserwowane przy badaniach laboratoryjnych. Mają one charakter wyłącznie informacyjny. Wszelkie informacje zawarte w opisach nie są zatwierdzone przez GIS, GIF ani EFSA. Substancja nie jest produktem spożywczym ani suplementem diety. Nie nadaje się do spożycia przez ludzi. Produkt jest kwalifikowany jako odczynnik chemiczny / materiał odniesienia dopuszczony do obrotu na terenie UE. Można go używać wyłącznie do badań naukowych. Pozostałe informacje na temat środka zawarte są w karcie charakterystyki substancji chemicznej, którą udostępniamy do wglądu. Produkty dostępne są dla instytucji lub osób prywatnych, które są powiązane z działalnością badawczą lub laboratoryjną.",
-      "add_to_cart":"Do koszyka",
-      "reviews":"Opinii",
-      "Star":"Gwiazda",
-      "blog":"Blogi",
-      "toc":"Spis treści",
-      "total":"Łączny",
-      "delivery_fee":"Opłata za dostawę",
-      "subtotal":"Suma częściowa",
-      "contact_title":"Kontakt i Wsparcie",
-      "contact_desc":"Masz pytania dotyczące terapii z tirzepatydem ? Chcesz dowiedzieć się więcej o poszczególnych produktach, takich jak semaglutyd lub Retatrutyd Skontaktuj się z nami już dziś! Nasz zespół ekspertów jest gotowy, aby udzielić Ci wszelkich informacji Wystarczy, że odwiedzisz naszą stronę kontaktową lub zadzwonisz na infolinię – jesteśmy do Twojej dyspozycji."   
+  "Common": {
+    "disclaimer_txt": "Wszystkie właściwości wymienione poniżej zostały zaobserwowane w testach laboratoryjnych. Służą wyłącznie celom informacyjnym. Wszystkie informacje zawarte w opisach nie zostały zatwierdzone przez GIS, GIF ani EFSA. Substancja nie jest produktem spożywczym ani suplementem diety. Nie nadaje się do spożycia przez ludzi. Produkt jest klasyfikowany jako odczynnik chemiczny / materiał referencyjny dopuszczony do obrotu w UE. Może być stosowany wyłącznie do badań naukowych. Inne informacje o produkcie znajdują się w karcie charakterystyki chemicznej, którą udostępniamy do wglądu. Produkty są dostępne dla instytucji lub osób związanych z działalnością badawczą lub laboratoryjną.",
+    "add_to_cart": "Dodaj do koszyka",
+    "reviews": "Opinie",
+    "Star": "Gwiazda",
+    "blog": "Blogi",
+    "toc": "Spis treści",
+    "total": "Łącznie",
+    "delivery_fee": "Koszt dostawy",
+    "subtotal": "Suma częściowa",
+    "contact_title": "Kontakt i Wsparcie",
+    "contact_desc": "Masz pytania dotyczące terapii tirzepatydem? Chcesz dowiedzieć się więcej o poszczególnych produktach, takich jak semaglutyd czy retatrutyde? Skontaktuj się z nami już dziś! Nasz zespół ekspertów jest gotowy udzielić Ci wszelkich informacji. Po prostu odwiedź naszą stronę kontaktową lub zadzwoń na naszą infolinię - jesteśmy do Twojej dyspozycji.",
+    "discount": "Rabat",
+    "quantity": "Ilość",
+    "partial_discount": "Częściowy rabat",
+    "free_units": "Darmowe jednostki",
+    "price": "Cena",
+    "product": "Produkt",
+    "item_ttl": "Łącznie za pozycję",
+    "currency": "zł"
+  },
+  "HomePage": {
+    "title": "Witamy w naszym sklepie z najwyższej jakości odczynnikami chemicznymi.",
+    "banner_btn": "Przejrzyj sklep",
+    "blog_btn": "Zobacz Blogi"
+  },
+  "Form": {
+    "credits": "Twoje Kredyty",
+    "available_cr": "Dostępne Kredyty",
+    "use_credit": "Użyj Kredytów",
+    "credit_desc": "Możesz użyć swoich kredytów, aby zapłacić za zamówienie. Kwota kredytów, których możesz użyć, jest ograniczona do całkowitej wartości zamówienia.",
+    "enter_credits": "Wprowadź kwotę kredytów, której chcesz użyć",
+    "title": "Skontaktuj się z nami",
+    "name": "Imię i nazwisko",
+    "phone": "Numer telefonu",
+    "phone_placeholder": "Wprowadź swój numer telefonu.",
+    "name_placeholder": "Wprowadź swoje imię i nazwisko",
+    "email": "Adres e-mail",
+    "email_placeholder": "Twój adres e-mail",
+    "message": "Wiadomość",
+    "message_placeholder": "Twoja opinia",
+    "review_placeholder": "Twoja recenzja",
+    "checkbox_label": "Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu kontaktowym w celach niezbędnych do realizacji i obsługi procesu kontaktowego zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (Dz. U. z 2002 r. Nr 101, poz. 926, z późn. zm.).",
+    "Submit": "Wyślij",
+    "loading": "Przetwarzanie",
+    "search_placeholder": "Szukaj produktów",
+    "review_form_title": "Zostaw recenzję",
+    "rating_placeholder": "Wybierz ocenę",
+    "review_post_btn": "Opublikuj recenzję",
+    "checkout_form_title": "Adres",
+    "delivery_opt": "Opcje dostawy",
+    "pmn": "Numer paczkomatu",
+    "country": "Kraj",
+    "country_placeholder": "Wprowadź swój kraj",
+    "address": "Adres",
+    "address_placeholder": "Wprowadź pełny adres - Numer domu, Ulica, Miasto",
+    "name_required": "Imię i nazwisko jest wymagane",
+    "email_required": "Adres e-mail jest wymagany",
+    "email_invalid": "Adres e-mail jest nieprawidłowy",
+    "message_required": "Wiadomość jest wymagana",
+    "submission_failed": "Błąd",
+    "submission_success": "Sukces",
+    "rev_succ_desc": "Twoja recenzja zostanie opublikowana po weryfikacji",
+    "rev_err_desc": "Coś poszło nie tak",
+    "use_coupon_code":"Użyj kodu kuponu",
+    "coupon_code": "Wprowadź swój kod"
+  },
+  "Footer": {
+    "contact_info": "Informacje kontaktowe",
+    "imp_link": "Ważne linki",
+    "community": "Społeczność",
+    "footer_text": "Twój partner w osiąganiu celów zdrowotnych dzięki niezawodnym i dostępnym środkom.",
+    "address": "Adres",
+    "complete_address": "47th East Street and Aquilino de la Guardia Avenue 17th Floor, Office 1702 Panama City, Republic of Panama",
+    "tax": "Numer identyfikacji podatkowej (RUC)"
+  },
+  "Links": {
+    "FAQ's": "FAQ",
+    "Contact": "Kontakt",
+    "Delivery-and-Payment": "Dostawa i Płatność",
+    "Shop Rules": "Regulamin Sklepu",
+    "Privacy": "Prywatność",
+    "Affiliate Program": "Program Partnerski",
+    "Blogs": "Blogi",
+    "Research": "Badania",
+    "Shop": "Sklep",
+    "What is GLP+1+GIP": "Co to jest GLP+1+GIP",
+    "How GLP-1+GIP works": "Jak działa GLP-1+GIP",
+    "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
+    "GLP-1+GIP vs other analogues": "GLP-1+GIP a inne analogi",
+    "GLP-1+GIP": "GLP-1+GIP",
+    "Home": "Strona Główna",
+    "Semaglutyd Labo Test": "Semaglutyd Labo Test",
+    "Retatrutyd Labo Test": "Retatrutyde Labo Test",
+    "Sema + cagri Labo Test": "Sema + cagri Labo Test"
+  },
+  "Cart": {
+    "cart_title": "PRODUKTY W KOSZYKU",
+    "empty_cart": "Brak produktów w koszyku",
+    "cart_ttl_amt": "Łączna kwota koszyka",
+    "chkt": "Do kasy",
+    "price": "Cena"
+  },
+  "Product_page": {
+    "weight_loss": "Program odchudzania",
+    "legal_desc": "Substancja nie jest produktem spożywczym ani suplementem diety, nie nadaje się do spożycia przez ludzi. Produkt jest klasyfikowany jako odczynnik chemiczny dopuszczony do sprzedaży w Unii Europejskiej, może być stosowany wyłącznie do badań naukowych.",
+    "usp": {
+      "return_usp": "14 Dni na Zwrot",
+      "lab_ql_usp": "Jakość laboratoryjna",
+      "shopping_usp": "Bezpieczne zakupy",
+      "shipping": "Czas wysyłki",
+      "shipping_time": "1-2 dni robocze",
+      "quality": "gwarancja jakości",
+      "stand_lab": "standard laboratoryjny"
     },
-    "HomePage": {
-      "title": "Witamy w naszym sklepie z odczynnikami chemicznymi najwyższej jakości.",
-      "banner_btn": "Przeglądaj sklep",
-      "blog_btn":"Zobacz blogi"
+    "product_warning": {
+      "title": "Produkt przeznaczony do celów badawczych",
+      "additional_info": "DODATKOWE INFORMACJE:",
+      "point_one": "Produkt (substancja) nie jest produktem spożywczym ani suplementem diety, nie nadaje się do spożycia przez ludzi.",
+      "point_two": "Przechowywać z dala od dzieci.",
+      "point_three": "Przechowywać pojemnik szczelnie zamknięty.",
+      "point_four": "Przechowywać w suchym, chłodnym, zacienionym miejscu; chronić przed wilgocią.",
+      "point_five": "Przechowywać tylko w oryginalnym opakowaniu.",
+      "point_six": "Unikać kontaktu w czasie ciąży i karmienia piersią.",
+      "point_seven": "W przypadku złego samopoczucia lub reakcji niepożądanych związanych z kontaktem z substancją, skonsultować się z lekarzem."
     },
-    "Form":{
-      "title":"Skontaktuj się z nami",
-      "name":"Name",
-      "phone":"Telefon Numer",
-      "phone_placeholder":"Wpisz swój numer telefonu.",
-      "name_placeholder":"Wpisz swoje imię i nazwisko",
-      "email":"Email",
-      "email_placeholder":"Twój adres e-mail",
-      "message":"Komunikat",
-      "message_placeholder":"Twoja opinia",
-      "review_placeholder":"Twoja opinia",
-      "checkbox_label":"Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu kontaktowym dla potrzeb niezbędnych do realizacji i obsługi procesu kontaktu zgodnie z ustawą z dnia 29.08.1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późn.zm.).",
-      "Submit":"Prześlij",
-      "loading":"Przetwarzanie",
-      "search_placeholder":"Szukaj produktów",
-      "review_form_title":"Zostaw opinię",
-      "rating_placeholder":"Wybierz ocenę",
-      "review_post_btn":"Opublikuj recenzję",
-      "checkout_form_title":"Adres",
-      "delivery_opt":"Opcje dostawy",
-      "pmn":"Numer paczkomatu",
-      "country": "Kraj",
-      "country_placeholder": "Wpisz swój kraj",
-      "address": "Adres",
-      "address_placeholder": "Wpisz pełny adres - Numer domu, Ulica, Miasto",
-      "name_required": "Imię jest wymagane",
-      "email_required": "Adres e-mail jest wymagany",
-      "email_invalid": "Nieprawidłowy adres e-mail",
-      "message_required": "Wiadomość jest wymagana",
-      "submission_failed":"Wysłanie nie powiodło się",
-      "submission_success":"Success",
-      "rev_succ_desc":"Twoja recenzja zostanie opublikowana po zweryfikowaniu",
-      "rev_err_desc":"Coś poszło nie tak"
+    "seo": {
+      "title_suffix": "Najlepsze Rozwiązanie na Odchudzanie | Tirze-Fit",
+      "description": "Kup {productName} - najwyższej jakości peptyd wspomagający odchudzanie z certyfikowanymi wynikami. Szybka wysyłka w Polsce. 100% Gwarancji Jakości.",
+      "keywords": "kup {productName}, odchudzanie, Polska, certyfikowany, peptyd",
+      "og_title": "Najwyższej Jakości Rozwiązanie na Odchudzanie - {productName}",
+      "og_description": "Odkryj {productName} - skuteczne rozwiązanie wspomagające kontrolę wagi z klinicznymi wynikami. Zamów teraz!",
+      "twitter_title": "Skuteczne Odchudzanie z {productName}",
+      "twitter_description": "Zdobądź {productName} dla najlepszych rezultatów w kontroli wagi. Certyfikowana jakość. Zamów teraz!"
     },
-    "Footer": {
-      "contact_info": "Informacje kontaktowe",
-      "imp_link": "Ważne linki",
-      "community": "Społeczność",
-      "footer_text":"Twój partner w osiąganiu zdrowia dzięki niezawodnym i łatwo dostępnym rozwiązaniom."   
+    "price_label": "CENA",
+    "product_image_alt": "Wizualizacja produktu"
+  },
+  "Review_page": {
+    "based_on_ratings": "Na podstawie {count} {count, plural, one {oceny} few {ocen} many {ocen} other {ocen}}",
+    "load_more": "Załaduj więcej opinii",
+    "loading": "Ładowanie...",
+    "no_reviews": "Nie opublikowano jeszcze żadnych opinii",
+    "no_rating": "Brak Ocen"
+  },
+  "Checkout": {
+    "chktout": "Do kasy",
+    "ordr_summary": "Podsumowanie zamówienia",
+    "delivery_charges": "Opłaty za dostawę",
+    "discount": "Rabat",
+    "empty_cart": "Brak produktów w koszyku",
+    "sub_total":"Podsuma"
+  },
+  "Order_Info_Page": {
+    "order_msg": "Nasz menedżer konta wyśle Ci numer konta bankowego, na który otrzymasz płatność w ciągu 2 godzin od złożenia zamówienia. Twoje zamówienie zostanie potwierdzone dopiero po pomyślnej płatności.",
+    "detail_info": "Szczegółowe informacje",
+    "orderId": "Numer zamówienia",
+    "date": "Opublikowano",
+    "shipping_address": "Adres dostawy",
+    "ordr_status": "Status zamówienia",
+    "status": "Status",
+    "ordrd_products": "Zamówione produkty",
+    "order": "Zamówienie"
+  },
+  "BlogListPage": {
+    "seo": {
+      "title": "Wszystkie Artykuły | Blog Badawczy Tirze-Fit",
+      "description": "Przeglądaj naszą kompletną kolekcję artykułów i prac badawczych dotyczących peptydów wspomagających odchudzanie, optymalizacji metabolizmu i biohackingu.",
+      "keywords": "artykuły na blogu, badania nad odchudzaniem, badania peptydów, biohacking, metabolizm",
+      "og_title": "Kompletna Kolekcja Artykułów - Badania Tirze-Fit",
+      "og_description": "Przejrzyj wszystkie nasze szczegółowe artykuły i prace badawcze dotyczące nowoczesnych rozwiązań wspomagających odchudzanie i optymalizacji metabolicznej.",
+      "og_image_alt": "Kolekcja Artykułów na Blogu Tirze-Fit",
+      "twitter_title": "Artykuły Badawcze o Odchudzaniu | Tirze-Fit",
+      "twitter_description": "Odkryj naszą kompletną kolekcję artykułów opartych na badaniach dotyczących terapii peptydowych i optymalizacji metabolicznej."
     },
-    "Links": {
-      "FAQ's": "FAQ",
-      "Contact": "Kontakt",
-      "Delivery-and-Payment": "Dostawa i płatność",
-      "Shop Rules": "Regulamin sklepu",
-      "Privacy": "Prywatność",
-      "Affiliate Program": "Program partnerski",
-      "Blogs": "Blogi",
-      "Research": "Badania",
-      "Shop": "Sklep",
-      "What is GLP+1+GIP": "Czym jest GLP+1+GIP",
-      "How GLP-1+GIP works": "Jak działa GLP-1+GIP",
-      "Effects after GLP-1+GIP": "Efekty po GLP-1+GIP",
-      "GLP-1+GIP vs other analogues": "GLP-1+GIP vs. inne analogi",
-      "GLP-1+GIP": "GLP-1+GIP",
-      "Home": "Strona główna",
-      "Semaglutyd Labo Test":"Semaglutyd Labo Test",
-      "Retatrutyd Labo Test":"Retatrutyd Labo Test",
-      "Sema + cagri Labo Test":"Sema + cagri Labo Test"
+    "title": "Blog Badawczy",
+    "description": "Najnowsze artykuły i badania dotyczące terapii peptydowych, kontroli wagi i optymalizacji metabolicznej",
+    "reading_time": "min czytania",
+    "featured_image_alt": "Obrazek wyróżniający artykuł: {title}",
+    "pagination": {
+      "previous": "Poprzednia",
+      "next": "Następna",
+      "page": "Strona {current} z {total}"
     },
-    "Cart":{
-      "cart_title": "PRODUKTY W KOSZYKU",
-      "empty_cart": "Brak produktów w koszyku",
-      "cart_ttl_amt": "Całkowita kwota koszyka",
-      "chkt": "Do kasy",
-      "price":"Cena"
+    "schema": {
+      "name": "Wszystkie Artykuły na Blogu",
+      "description": "Kompletna lista artykułów i prac badawczych dotyczących peptydów wspomagających odchudzanie"
     },
-    "Product_page":{
-      "weight_loss":"Program odchudzania",
-      "legal_desc":"Substancja nie jest produktem spożywczym ani suplementem diety, nie nadaje się on do spożycia przez ludzi. Produkt jest sklasyfikowany jako odczynnik chemiczny dopuszczony do obrotu na terenie Unii Europejskiej, można go używać wyłącznie do badań naukowych.",
-      "usp":{
-        "return_usp":"14-dniowa polityka zwrotów",
-        "lab_ql_usp":"Jakość laboratoryjna",
-        "shopping_usp":"Bezpieczne zakupy",
-        "shipping":"Czas wysyłki",
-        "shipping_time":"1-2  dni robocze",
-        "quality":"gwarancja jakości",
-        "stand_lab":"standard laboratoryjny"
-      },
-      "product_warning":{
-        "title":"Produkt przeznaczony do celów badawczych",
-        "additional_info":"INFORMACJE DODATKOWE:",
-        "point_one":"Produkt (substancja) nie jest produktem spożywczym ani suplementem diety, nie nadaje się do spożycia przez ludzi.",
-        "point_two":"Chronić przed dziećmi.",
-        "point_three":"Przechowywać pojemnik szczelnie zamknięty.",
-        "point_four":"Przechowywać w miejscu suchym, chłodnym, zacienionym; chronić przed wilgocią.",
-        "point_five":"Przechowywać wyłącznie w oryginalnym opakowaniu.",
-        "point_six":"Unikać kontaktu w czasie ciąży i karmienia piersią.",
-        "point_seven":"W przypadku złego samopoczucia lub działań niepożądanych związanych z kontaktem z substancją zasięgnąć opinii lekarza."
-      },
-      "seo": {
-        "title_suffix": "Najlepsze Rozwiązanie na Utratę Wagi | Tirze-Fit",
-        "description": "Kup {productName} - Peptyd na utratę wagi o najwyższej jakości z certyfikowanymi wynikami. Szybka wysyłka w Polsce. 100% Gwarancja Jakości.",
-        "keywords": "kup {productName}, utrata wagi, Polska, certyfikowany, peptyd",
-        "og_title": "Najwyższej Jakości Rozwiązanie na Utratę Wagi - {productName}",
-        "og_description": "Odkryj {productName} - Skuteczne rozwiązanie do kontroli wagi z klinicznymi wynikami. Zamów teraz!",
-        "twitter_title": "Skuteczna Utrata Wagi z {productName}",
-        "twitter_description": "Zdobądź {productName} dla najlepszych wyników w kontroli wagi. Certyfikowana jakość. Zamów teraz!"
-      },
-      "price_label": "CENA",
-      "product_image_alt": "Wizualna prezentacja produktu"
-    },
-    "Review_page":{
-      "based_on_ratings": "Na podstawie {count} {count, plural, one {oceny} few {ocen} many {ocen} other {ocen}}",
-      "load_more": "Załaduj więcej recenzji",
-      "loading": "Ładowanie...",
-      "no_reviews": "Żadna recenzja nie została jeszcze opublikowana",
-      "no_rating": "Nie otrzymano oceny"
-    },
-    "Checkout":{
-      "chktout":"Kasa",
-      "ordr_summary":"Podsumowanie zamówienia",
-      "delivery_charges":"Koszty dostawy"
-    },
-    "Order_Info_Page":{
-      "order_msg":"Nasz opiekun klienta wyśle Ci konto bankowe, na które otrzymasz płatność w ciągu 2 godzin od złożenia zamówienia. Twoje zamówienie zostanie potwierdzone dopiero po pomyślnym dokonaniu płatności.",
-      "detail_info":"Szczegółowe informacje",
-      "orderId":"Order ID",
-      "date":"Umieszczono w dniu",
-      "shipping_address":"Adres wysyłki",
-      "ordr_status":"Status zamówienia",
-      "status":"stan",
-      "ordrd_products":"Zamówione produkty"
-    },
-    "BlogListPage": {
-      "seo": {
-        "title": "Wszystkie Artykuły | Blog Tirze-Fit",
-        "description": "Przeglądaj nasze kompleksowe artykuły i badania naukowe dotyczące peptydów odchudzających, optymalizacji metabolizmu i biohackingu.",
-        "keywords": "artykuły blogowe, badania odchudzające, badania peptydów, biohacking, metabolizm",
-        "og_title": "Pełna Kolekcja Artykułów - Tirze-Fit Research",
-        "og_description": "Przeglądaj wszystkie nasze szczegółowe artykuły i prace badawcze dotyczące nowoczesnych rozwiązań w zakresie utraty wagi i optymalizacji metabolicznej.",
-        "og_image_alt": "Kolekcja artykułów na blogu Tirze-Fit",
-        "twitter_title": "Artykuły Badawcze o Odchudzaniu | Tirze-Fit",
-        "twitter_description": "Odkryj naszą kompletną kolekcję artykułów opartych na badaniach dotyczących terapii peptydowych i optymalizacji metabolicznej."
-      },
-      "title": "Blog Badawczy",
-      "description": "Najnowsze artykuły i badania dotyczące terapii peptydowych, kontroli wagi i optymalizacji metabolizmu",
-      "reading_time": "min czytania",
-      "featured_image_alt": "Główne zdjęcie dla artykułu: {title}",
-      "pagination": {
-        "previous": "Poprzednia",
-        "next": "Następna",
-        "page": "Strona {current} z {total}"
-      },
-      "schema": {
-        "name": "Wszystkie Artykuły",
-        "description": "Pełna lista artykułów i badań naukowych dotyczących peptydów odchudzających"
-      },
-      "breadcrumb": {
-        "home": "Strona Główna",
-        "blog": "Blog"
-      }
+    "breadcrumb": {
+      "home": "Strona Główna",
+      "blog": "Blog"
     },
     "ArticlePage": {
       "seo": {
         "title_suffix": "| Tirze-Fit",
-        "default_description": "Przeczytaj nasz szczegółowy artykuł na temat",
-        "default_keywords": "artykuł, post blogowy, badania"
+        "default_description": "Przeczytaj nasz obszerny artykuł na temat",
+        "default_keywords": "artykuł, wpis na blogu, badania"
       },
       "breadcrumb": {
         "home": "Strona Główna",
         "blog": "Blog"
       },
-      "no_article": "Artykuł nie znaleziony"
+      "no_article": "Nie znaleziono artykułu"
+    }
+  },
+  "ArticlePage": {
+    "seo": {
+      "title_suffix": "| Tirze-Fit",
+      "default_description": "Przeczytaj nasz obszerny artykuł na temat",
+      "default_keywords": "artykuł, wpis na blogu, badania"
     },
-    "Products":{
-      "Semaglutyd 4mg (0,25-4mg)":"Semaglutyd 4mg (0.25-4mg)",
-      "Retatrutyd 4 mg Pen - TRIPLE G (0,25-4mg)":"Retatrutyd 4 mg Pen - TRIPLE G (0.25-4mg)",
-      "SemA + CAGRI PEN":"SEMA + CAGRI PEN"
+    "breadcrumb": {
+      "home": "Strona Główna",
+      "blog": "Blog"
     },
-    "Research":{
-      "retatrutyd-labo-test-report": {
-        "title": "Raport z Badań Laboratoryjnych NOVAMED RETATRUTYD 4MG – Zweryfikowane Stężenie i Czystość Retatrutydu",
-        "description": "Zobacz certyfikowany raport z badań laboratoryjnych dla NOVAMED RETATRUTYD 4MG w fabrycznie napełnionym wstrzykiwaczu. Zweryfikowane stężenie 1,35 mg/ml (4,05 mg/3 ml) potwierdzone analizą chromatograficzną przez Laboratorium Analiza Białek. Zapoznaj się ze szczegółową czystością, metodologią badań i wynikami dostarczonymi przez wykwalifikowanych specjalistów."
-      },
-      "sema+cagri-labo-test-report": {
-        "title": "Analiza Laboratoryjna NOVAMED SEMA+CAGRI (Semaglutyd + Kagrilintyd) 2+2MG – Zweryfikowana Czystość i Stężenie",
-        "description": "Uzyskaj zweryfikowane wyniki badań laboratoryjnych dla NOVAMED SEMA+CAGRI 2+2MG, połączenia Semaglutydu i Kagrilintydu w fabrycznie napełnionym wstrzykiwaczu. Badane przez Laboratorium Analiza Białek przy użyciu zaawansowanej chromatografii, potwierdzające stężenia odpowiednio 0,72 mg/ml i 0,69 mg/ml. Zobacz szczegółową czystość, metodologię i analizę przeprowadzoną przez certyfikowanych specjalistów."
-      },
-      "semaglutyd-labo-test-report": {
-        "title": "Raport z Badań Laboratoryjnych NOVAMED SEMAGLUTYD 1MG – Certyfikat Zweryfikowanej Zawartości i Czystości Semaglutydu",
-        "description": "Zapoznaj się z oficjalnym raportem z badań laboratoryjnych dla fabrycznie napełnionego wstrzykiwacza NOVAMED SEMAGLUTYD 1MG, potwierdzającym stężenie 1,42 mg/ml (4,26 mg/3 ml). Analizowany przez Laboratorium Analiza Białek przy użyciu zaawansowanej chromatografii, ten raport dostarcza zweryfikowane dane dotyczące czystości, metody pobierania próbek i precyzyjnych warunków laboratoryjnych."
-      }
+    "no_article": "Nie znaleziono artykułu"
+  },
+  "Products": {
+    "Semaglutyd 4mg (0,25-4mg)": "Semaglutyd 4mg (0.25-4mg)",
+    "Retatrutyd 4 mg Pen - TRIPLE G (0,25-4mg)": "Retatrutyde 4 mg Pen - TRIPLE G (0.25-4mg)",
+    "SemA + CAGRI PEN": "SEMA + CAGRI PEN"
+  },
+  "Research": {
+    "retatrutyd-labo-test-report": {
+      "title": "Raport z Badań Laboratoryjnych NOVAMED RETATRUTIDE 4MG – Zweryfikowane Stężenie i Czystość Retatrutydy",
+      "description": "Zobacz certyfikowany raport z badań laboratoryjnych NOVAMED RETATRUTIDE 4MG w fabrycznie napełnionym penie. Zweryfikowane stężenie 1.35mg/ml (4.05mg/3ml) potwierdzone analizą chromatograficzną przez Laboratorium Analiz Białek. Zapoznaj się ze szczegółową czystością, metodologią badań i wynikami dostarczonymi przez wykwalifikowanych specjalistów."
+    },
+    "sema+cagri-labo-test-report": {
+      "title": "Raport z Badań Laboratoryjnych NOVAMED SEMA+CAGRI (Semaglutyd + Kagrylintyd) 2+2MG – Zweryfikowana Czystość i Stężenie",
+      "description": "Uzyskaj zweryfikowane wyniki badań laboratoryjnych NOVAMED SEMA+CAGRI 2+2MG, połączenia Semaglutydu i Kagrylintydu w fabrycznie napełnionym penie. Przetestowane przez Laboratorium Analiz Białek przy użyciu zaawansowanej chromatografii, potwierdzając stężenia odpowiednio 0.72mg/ml i 0.69mg/ml. Zobacz szczegółową czystość, metodologię i analizę przeprowadzoną przez certyfikowanych specjalistów."
+    },
+    "semaglutyd-labo-test-report": {
+      "title": "Raport z Badań Laboratoryjnych NOVAMED SEMAGLUTIDE 1MG – Zweryfikowana Zawartość i Certyfikat Czystości Semaglutydu",
+      "description": "Zapoznaj się z oficjalnym raportem z badań laboratoryjnych NOVAMED SEMAGLUTIDE 1MG w fabrycznie napełnionym penie, potwierdzającym stężenie 1.42mg/ml (4.26mg/3ml). Analizowany przez Laboratorium Analiz Białek przy użyciu zaawansowanej chromatografii, raport ten zawiera zweryfikowane dane dotyczące czystości, metody pobierania próbek i precyzyjnych warunków laboratoryjnych."
     }
   }
+}

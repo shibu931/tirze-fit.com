@@ -10,7 +10,15 @@
     "delivery_fee": "Delivery fee",
     "subtotal": "Subtotal",
     "contact_title": "Contact and Support",
-    "contact_desc": "Do you have questions about therapy with tirzepatide? Do you want to learn more about individual products, such as semaglutide or retatrutyde? Contact us today! Our team of experts is ready to provide you with all the information. Just visit our contact page or call our hotline - we are at your disposal."
+    "contact_desc": "Do you have questions about therapy with tirzepatide? Do you want to learn more about individual products, such as semaglutide or retatrutyde? Contact us today! Our team of experts is ready to provide you with all the information. Just visit our contact page or call our hotline - we are at your disposal.",
+    "discount": "Discount",
+    "quantity": "Quantity",
+    "partial_discount": "Partial discount",
+    "free_units": "Free units",
+    "price": "Price",
+    "product":"Product",
+    "item_ttl":"Item Total",
+    "currency":"€"
   },
   "HomePage": {
     "title": "Welcome to our store with the highest quality chemical reagents.",
@@ -18,6 +26,11 @@
     "blog_btn": "View Blogs"
   },
   "Form": {
+    "credits":"Your Credits",
+    "available_cr":"Available Credits",
+    "use_credit":"Use Credits",
+    "credit_desc":"You can use your credits to pay for your order. The amount of credits you can use is limited to the total value of the order.",
+    "enter_credits":"Enter the amount of credits you want to use",
     "title": "Contact Us",
     "name": "Name",
     "phone": "Phone Number",
@@ -49,13 +62,18 @@
     "submission_failed": "Error",
     "submission_success": "Success",
     "rev_succ_desc":"Your review will be published after verification",
-    "rev_err_desc":"Something went wrong"
+    "rev_err_desc":"Something went wrong",
+    "use_coupon_code":"Use Coupon Code",
+    "coupon_code":"Enter you coupon code"
   },
   "Footer": {
     "contact_info": "Contact Information",
     "imp_link": "Important links",
     "community": "Community",
-    "footer_text": "Your partner in achieving your health goals with reliable and accessible means."
+    "footer_text": "Your partner in achieving your health goals with reliable and accessible means.",
+    "address":"Address",
+    "complete_address":"47th East Street and Aquilino de la Guardia Avenue 17th Floor, Office 1702 Panama City, Republic of Panama",
+    "tax":"Tax identification number (RUC)"
   },
   "Links": {
     "FAQ's": "FAQ",
@@ -82,7 +100,7 @@
     "empty_cart": "No products in cart",
     "cart_ttl_amt": "Total cart amount",
     "chkt": "Checkout",
-    "price": "Cena"
+    "price": "Price"
   },
   "Product_page": {
     "weight_loss": "Weight loss program",
@@ -127,9 +145,12 @@
     "no_rating": "No Rating Received"
   },
   "Checkout": {
-    "chktout": "Country",
+    "chktout": "Checkout",
     "ordr_summary": "Order Summary",
-    "delivery_charges": "Delivery charges"
+    "delivery_charges": "Delivery charges",
+    "discount": "Discount",
+    "empty_cart":"No products in cart",
+    "sub_total":"Sub Total"
   },
   "Order_Info_Page": {
     "order_msg": "Our account manager will send you the bank account number where you will receive your payment within 2 hours of placing your order. Your order will be confirmed only after successful payment.",
@@ -139,7 +160,8 @@
     "shipping_address": "Shipping address",
     "ordr_status": "Order Status",
     "status": "Status",
-    "ordrd_products": "Ordered products"
+    "ordrd_products": "Ordered products",
+    "order": "Order"
   },
   "BlogListPage": {
     "seo": {

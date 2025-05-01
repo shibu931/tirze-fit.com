@@ -160,7 +160,7 @@
 
 main{
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   @apply px-4 sm:px-20 lg:px-24 xl:px-0 max-w-10xl mx-auto
 }
 

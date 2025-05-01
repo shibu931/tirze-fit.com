@@ -10,6 +10,7 @@ const Page = () => {
     const t = useTranslations('Order_Info_Page')
     const f = useTranslations('Form')
     const c = useTranslations('Common')
+    const chk = useTranslations('Checkout')
     const searchParams = useSearchParams();
     const orderId = searchParams.get('orderId');
     const [orderDetails, setOrderDetails] = useState(null); // Initialize to null
@@ -24,7 +25,8 @@ const Page = () => {
                     if (result && result.error) {
                         setError(result.error);
                     } else if (result && result.message === 'ok') {
-                        setOrderDetails(result.order); 
+                        setOrderDetails(result.order);
+                        console.log('Order Details:', result.order); 
                     } else {
                         setError("Unexpected error occured")
                     }
@@ -68,7 +70,7 @@ const Page = () => {
                     <div className="md:flex md:space-x-12 mb-8">
                         <div className="md:w-1/2">
                             <h3 className="text-lg font-medium text-gray-800 mb-3">{t('shipping_address')}</h3>
-                            <ul className="text-gray-600 space-y-1">
+                            <ul className="text-gray-700 space-y-1">
                                 <li><strong>{f('name')}:</strong> {orderDetails.addressDetails.name}</li>
                                 <li><strong>{f('email')}:</strong> {orderDetails.addressDetails.email}</li>
                                 <li><strong>{f('phone')}:</strong> {orderDetails.addressDetails.phoneNumber}</li>
@@ -84,9 +86,9 @@ const Page = () => {
                             </ul>
                         </div>
                         <div className="md:w-1/2 mt-4 md:mt-0">
-                            <h3 className="text-lg font-medium text-gray-800 mb-3">Porządek</h3>
-                            <div className="text-gray-600 space-y-1">
-                                <p>Porządek: {orderDetails.status}</p>
+                            <h3 className="text-lg font-medium text-gray-800 mb-1">{t('ordr_status')}</h3>
+                            <div className="text-gray-700">
+                                <p><strong>{t('status')}</strong>: {orderDetails.status}</p>
                             </div>
                         </div>
                     </div>
@@ -97,9 +99,11 @@ const Page = () => {
                             <table className="w-full table-auto border-collapse border border-gray-300">
                                 <thead>
                                     <tr className="bg-gray-50 text-gray-700">
-                                        <th className="px-4 py-3 border border-gray-300 text-left font-medium">Produkt</th>
-                                        <th className="px-4 py-3 border border-gray-300 text-left font-medium">Ilość</th>
-                                        <th className="px-4 py-3 border border-gray-300 text-right font-medium">Cena</th>
+                                        <th className="px-4 py-3 border border-gray-300 text-left font-medium">{c('product')}</th>
+                                        <th className="px-4 py-3 border border-gray-300 text-left font-medium">{c('quantity')}</th>
+                                        <th className="px-4 py-3 border border-gray-300 text-right font-medium">{c('price')}</th>
+                                        <th className="px-4 py-3 border border-gray-300 text-right font-medium">{c('discount')}</th>
+                                        <th className="px-4 py-3 border border-gray-300 text-right font-medium">{c('item_ttl')}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -110,8 +114,10 @@ const Page = () => {
                                                     {product.productName}
                                                 </Link>
                                             </td>
-                                            <td className="px-4 py-3 text-gray-700 border border-gray-300">{product.quantity}</td>
-                                            <td className="px-4 py-3 text-gray-700 border border-gray-300 text-right">€{product.price}</td>
+                                            <td className="px-4 py-3 font-mono text-gray-700 border border-gray-300">{product.quantity}</td>
+                                            <td className="px-4 py-3 font-mono text-gray-700 border border-gray-300 text-right">{product.productOrigialTotal}</td>
+                                            <td className="px-4 py-3 font-mono text-green-600 border border-gray-300 text-right">{product.totalDiscount}</td>
+                                            <td className="px-4 py-3 font-mono text-gray-700 border border-gray-300 text-right">{product.finalPrice}</td>
                                         </tr>
                                     ))}
                                 </tbody>
@@ -121,13 +127,13 @@ const Page = () => {
 
                     <div className="border-t border-gray-200 pt-6 mt-8">
                         <div className="md:flex md:justify-end">
-                            <div className="md:w-1/2 md:text-right">
-                                <div className="text-gray-600 space-y-1">
-                                    <p className="mb-1">{c('subtotal')}: €{orderDetails?.total.toFixed(2)}</p>
-                                    {/* <p className="mb-1">Discount: €{orderDetails.discount.toFixed(2)}</p> */}
-                                    <p>{c('delivery_fee')}: €{orderDetails?.deliverCharge?.toFixed(2)}</p>
+                            <div className="md:w-1/2 md:text-right font-mono">
+                                <div className="text-gray-700 space-y-1">
+                                    <p className="mb-1">{c('subtotal')}: {orderDetails?.total.toFixed(2)} {c('currency')}</p>
+                                    <p className="mb-1 text-green-600">{chk('discount')}: -{orderDetails.orderDiscount}{c('currency')}</p>
+                                    <p>{c('delivery_fee')}: {orderDetails?.deliverCharge?.toFixed(2)} {c('currency')}</p>
                                 </div>
-                                <p className="text-xl font-semibold text-gray-800 mb-2">{c('total')}: €{parseFloat(orderDetails?.total.toFixed(2)) + parseFloat(orderDetails?.deliverCharge?.toFixed(2)) }</p>
+                                <p className="text-xl font-semibold text-gray-800 mb-2">{c('total')}: {parseFloat(orderDetails?.total.toFixed(2)) + parseFloat(orderDetails?.deliverCharge?.toFixed(2))} {c('currency')}</p>
                             </div>
                         </div>
                     </div>

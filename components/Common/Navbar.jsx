@@ -27,8 +27,10 @@ import Cart from "./Cart"
 import { useTranslations } from "next-intl"
 import LanguageSwitcher from "./LanguageSwitcher";
 import Image from "next/image";
+import { ImProfile } from "react-icons/im";
+import { User, User2 } from "lucide-react";
 
-const Navbar = () => {
+const Navbar = ({locale}) => {
     const t = useTranslations('Form')
     const [isSticky, setIsSticky] = useState(false);
     const navbarRef = useRef(null);
@@ -58,7 +60,6 @@ const Navbar = () => {
                         src="/assets/logo.png"
                         width={180}
                         height={120}
-                        className=""
                         alt="Tirze-fit"
                     />
                     </Link>
@@ -66,7 +67,7 @@ const Navbar = () => {
                 <div className="flex items-center md:space-x-4">
                     <div className="hidden md:block"><NavMenu pathname={pathname} /></div>
                     <div className="md:hidden order-3 mt-1 ms-2 md:me-0"><MobileNav pathname={pathname} /></div>
-                    <div className="flex items-center space-x-3">
+                    <div className="flex items-center space-x-4 lg:space-x-6">
                         {/* <div className="relative">
                             <div onClick={() => (setSearchBox(!searchBox))} className="hover:bg-blue-100 rounded p-1 hover:shadow-lg hover:border border-blue-200 hover:text-blue-700 hover:cursor-pointer"><LuSearch className="text-xl mt-1" /></div>
                             <form
@@ -85,9 +86,8 @@ const Navbar = () => {
                                 </div>
                             </form>
                         </div> */}
-                        <div>
-                            <Cart />
-                        </div>
+                            <Cart locale={locale}/>
+                            <Link aria-label="Profile" href={'/profile'} className="border border-gray-500 rounded-full p-1 mt-1"> <User2 className="text-gray-600 w-5 h-5"/> </Link>
                     </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@ const NavMenu = ({ open, setOpen, pathname }) => {
                     <NavigationMenuItem key={link.slug} >
                         {link?.subLinks ? (
                             <>
-                                <NavigationMenuTrigger className={`${link.slug === url ? '!text-blue-700 active' : ''} nav-link`}>{link.label}
+                                <NavigationMenuTrigger className={`${link.slug === url ? '!text-blue-700 active' : ''} nav-link`}>{l(link.label)}
                                     <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-blue-700 transition-all duration-300 grouphover:w-full" />
                                 </NavigationMenuTrigger>
                                 <NavigationMenuContent className={'bg-white'}>

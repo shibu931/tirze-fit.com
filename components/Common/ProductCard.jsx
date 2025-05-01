@@ -22,7 +22,7 @@ const ProductCard = ({product}) => {
         <hr className='border-gray-300 mb-3'/>
         <Link href={"/product/"+product?.slug}><p className='product-card-title'>{product?.productName}</p></Link>
         <hr className='border-gray-300 my-2'/>
-        <span className='block text-center'>Cena: <span className='text-lg font-medium'>{product?.productPrice} {currency}</span></span>
+        <span className='block text-center'>{t('price')}: <span className='text-lg font-medium'>{product?.productPrice} {t('currency')}</span></span>
         <hr className='border-gray-300 my-2'/>
         <AddToCartBtn product={product} className='flex items-center mx-auto font-medium border border-blue-800 px-3 py-1.5 rounded bg-blue-700 text-white text-sm hover:bg-blue-800 hover:shadow shadow-gray-400 hover:cursor-pointer transition-all duration-200'>
         <IoCart className='me-2 text-[20px]'/>

@@ -1,6 +1,5 @@
 import ContactForm from "@/components/Common/ContactForm";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { getLocale, getTranslations } from "next-intl/server";
 import ShopPage from "@/components/ShopPage/ShopPage";
@@ -11,7 +10,7 @@ export default async function Home() {
     <main>
       <section>
         <div className="relative banner-img">
-          <div className="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] z-10 banner-text text-center">
+          <div className="absolute top-1/2 left-1/2 w-full lg:w-3/4 -translate-x-[50%] -translate-y-[50%] z-10 banner-text text-center">
             <h1 className="text-center font-bold md:font-extrabold text-xl sm:text-2xl md:text-4xl uppercase text-white tracking-wider w-full">{t('title')}</h1>
             <Link className="banner-btn inline-block mt-4 text-white  px-4 py-1.5 font-semibold hover:cursor-pointer shadow-lg shadow-neutral-900/25 bg-blue-700 rounded hover:bg-blue-800" href="/shop">
               {t('banner_btn')}
