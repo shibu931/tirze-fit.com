@@ -133,7 +133,7 @@ const Page = () => {
                                     <p className="mb-1 text-green-600">{chk('discount')}: -{orderDetails.orderDiscount}{c('currency')}</p>
                                     <p>{c('delivery_fee')}: {orderDetails?.deliverCharge?.toFixed(2)} {c('currency')}</p>
                                 </div>
-                                <p className="text-xl font-semibold text-gray-800 mb-2">{c('total')}: {parseFloat(orderDetails?.total.toFixed(2)) + parseFloat(orderDetails?.deliverCharge?.toFixed(2))} {c('currency')}</p>
+                                <p className="text-xl font-semibold text-gray-800 mb-2">{c('total')}: {parseFloat(orderDetails?.total.toFixed(2)) + parseFloat(orderDetails?.deliverCharge?.toFixed(2)) +parseFloat(orderDetails?.orderDiscount?.toFixed(2))} {c('currency')}</p>
                             </div>
                         </div>
                     </div>
