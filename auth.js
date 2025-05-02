@@ -81,4 +81,6 @@ export const {
         error: "/en/auth?tab-login",
     },
     secret: process.env.AUTH_SECRET,
+    trustHost: true,
+    trustedHosts: ['localhost', 'localhost:3003', 'tirze-fit.com'],
 });
