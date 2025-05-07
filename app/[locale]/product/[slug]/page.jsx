@@ -23,10 +23,10 @@ export async function generateMetadata({ params }) {
     description: t('seo.description', { productName: product.productName }),
     keywords: product?.keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/products/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/product/${slug}`,
       languages: {
-        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/products/${slug}`,
-        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/products/${slug}`,
+        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/product/${slug}`,
+        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/product/${slug}`,
       },
     },
     openGraph: {
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }) {
           alt: product.productName,
         },
       ],
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/product/${slug}`,
       type: 'website',
     },
     twitter: {
@@ -75,7 +75,7 @@ const ProductSchema = ({ product, locale }) => {
     },
     "offers": {
       "@type": "Offer",
-      "url": `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.slug}`,
+      "url": `${process.env.NEXT_PUBLIC_BASE_URL}/product/${product.slug}`,
       "priceCurrency": locale === 'en' ? 'EUR' : 'PLN' ,
       "price": product.productPrice,
       "availability": "https://schema.org/InStock",
