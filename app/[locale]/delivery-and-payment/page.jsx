@@ -19,7 +19,9 @@ export async function generateMetadata({ params }) {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const imageUrl = new URL(article.ogImage, baseUrl).toString();
   const keywordsArray = article.keywords.split(',').map(keyword => keyword.trim());
-  const canonicalUrl = new URL(`/${locale}/delivery-and-payment`, baseUrl).toString();
+  const canonicalUrl = new URL(`/pl/delivery-and-payment`, baseUrl).toString();
+  const enUrl = new URL('/en/delivery-and-payment', baseUrl).toString();
+  const plUrl = new URL('/pl/delivery-and-payment', baseUrl).toString();
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -42,8 +44,8 @@ export async function generateMetadata({ params }) {
       canonical: canonicalUrl,
       languages: {
         'x-default': canonicalUrl,
-        ...(locale === 'en' ? {} : { 'en': new URL('/en/delivery-and-payment', baseUrl).toString() }),
-        ...(locale === 'pl' ? {} : { 'pl': new URL('/pl/delivery-and-payment', baseUrl).toString() }),
+        'en': enUrl,
+        'pl': plUrl,
       },
     },
     openGraph: {

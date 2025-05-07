@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
     description: t('seo.description', { productName: product.productName }),
     keywords: product?.keywords,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${slug}`,
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/products/${slug}`,
       languages: {
         'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/products/${slug}`,
         'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/products/${slug}`,
@@ -148,7 +148,6 @@ const page = async ({ params }) => {
   return (
     <main>
       <ProductSchema product={product} locale={locale} />
-      <BreadcrumbSchema />
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-12">
           {simplifiedProduct.productImage && simplifiedProduct.productImage.length > 0 ? (
             <ProductImage productImages={simplifiedProduct?.productImage} productName={simplifiedProduct.productName} />
