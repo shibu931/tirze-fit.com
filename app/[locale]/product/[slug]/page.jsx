@@ -24,10 +24,6 @@ export async function generateMetadata({ params }) {
     keywords: product?.keywords,
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/product/${slug}`,
-      languages: {
-        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/product/${slug}`,
-        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/product/${slug}`,
-      },
     },
     openGraph: {
       title: `${product.productName} | ${t('seo.title_suffix')}`,

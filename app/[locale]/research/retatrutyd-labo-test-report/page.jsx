@@ -16,11 +16,6 @@ export async function generateMetadata({ params }) {
         metadataBase: new URL(baseUrl),
         alternates: {
             canonical: canonicalUrl,
-            languages: {
-                'x-default': canonicalUrl,
-                ...(locale === 'en' ? {} : { 'en': new URL('/en/research/retatrutyd-labo-test-report', baseUrl).toString() }),
-                ...(locale === 'pl' ? {} : { 'pl': new URL('/pl/research/retatrutyd-labo-test-report', baseUrl).toString() }),
-            },
         },
         openGraph: {
             title: title,

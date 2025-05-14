@@ -19,10 +19,6 @@ export async function generateMetadata({ params }) {
     keywords: keywordsArray,
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/blogs/${slug}`,
-      languages: {
-        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/blogs/${slug}`,
-        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/blogs/${slug}`,
-      },
     },
     openGraph: {
       title: article.metaTitle,

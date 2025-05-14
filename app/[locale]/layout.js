@@ -46,7 +46,6 @@ export async function generateMetadata({ params }) {
       languages: {
         'en': process.env.NEXT_PUBLIC_BASE_URL + '/en',
         'pl': process.env.NEXT_PUBLIC_BASE_URL + '/pl',
-        'x-default': `${process.env.NEXT_PUBLIC_BASE_URL}`,
       },
     },
     openGraph: {

@@ -4,17 +4,14 @@ import { getLocale, getTranslations } from 'next-intl/server'
 import React from 'react'
 
 export async function generateMetadata() {
+  const locale = await getLocale()
   const t = await getTranslations('BlogListPage');
   return {
     title: t('seo.title'),
     description: t('seo.description'),
     keywords: t('seo.keywords').split(', '),
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/blogs`,
-      languages: {
-        'en': `${process.env.NEXT_PUBLIC_BASE_URL}/en/blogs`,
-        'pl': `${process.env.NEXT_PUBLIC_BASE_URL}/pl/blogs`,
-      },
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}/blogs`,
     },
     openGraph: {
       title: t('seo.og_title'),

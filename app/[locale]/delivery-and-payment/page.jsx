@@ -42,11 +42,6 @@ export async function generateMetadata({ params }) {
     metadataBase: new URL(baseUrl),
     alternates: {
       canonical: canonicalUrl,
-      languages: {
-        'x-default': canonicalUrl,
-        'en': enUrl,
-        'pl': plUrl,
-      },
     },
     openGraph: {
       title: article.metaTitle,
