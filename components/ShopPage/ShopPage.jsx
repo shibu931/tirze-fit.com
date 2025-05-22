@@ -17,7 +17,7 @@ const ShopPage = async () => {
   }));
   return (
     <section className='my-4 lg:my-6'>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-auto gap-4 sm:gap-6 lg:gap-8 justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:grid-cols-auto gap-4 sm:gap-6 lg:gap-8 justify-center">
         {
           products.map((product) => (
             <ProductCard key={product?.slug} product={product} />

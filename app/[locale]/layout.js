@@ -43,10 +43,6 @@ export async function generateMetadata({ params }) {
     keywords: metadata.keywords,
     alternates: {
       canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${locale}`,
-      languages: {
-        'en': process.env.NEXT_PUBLIC_BASE_URL + '/en',
-        'pl': process.env.NEXT_PUBLIC_BASE_URL + '/pl',
-      },
     },
     openGraph: {
       title: metadata.title,
